@@ -53,6 +53,8 @@ def new_field(field_name, field_level, field_type, field_desc):
 
 
 def dump_yaml(header, fields_list, yaml_filename):
+    if not os.path.exists(botes_schema_folder):
+    	os.makedirs(botes_schema_folder)
     field_yaml = {"fields": fields_list}
     schema_yaml = [{**header, **field_yaml}]
     with open(botes_schema_folder + yaml_filename + ".yml", 'w') as new_schema_file:
@@ -93,6 +95,8 @@ def create_schemas_file():
 
 
 def create_logstash_mutate():
+    if not os.path.exists(logstash_conf_folder):
+        os.makedirs(logstash_conf_folder)
     for mapping_files in os.listdir(csv_map_files):
         fm = open(logstash_conf_folder + mapping_files.split('.')[0] + ".conf", 'w')
         fm.write("filter {\n\tmutate {\n")
@@ -109,7 +113,7 @@ def create_logstash_mutate():
 
 
 def call_ecs_generator():
-	os.system('python scripts/generator.py --include ' + botes_schema_folder)
+	os.system("python scripts/generator.py --include " + botes_schema_folder)
 
 
 def main():
