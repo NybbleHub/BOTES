@@ -3,7 +3,7 @@ import os
 import yaml
 
 # Specify the file path for Fields Summary input.
-csv_map_summary = "botes-csv-summary/BOTES-Fields-Summary.csv"
+csv_map_summary = "BOTES/botes-csv-summary/BOTES-Fields-Summary.csv"
 
 # Specify the output directory for BOTES ECS Fieldset schema.
 botes_schema_folder = "schemas-botes/"
@@ -12,7 +12,7 @@ botes_schema_folder = "schemas-botes/"
 logstash_conf_folder = "botes-logstash-conf/"
 
 # Specify the folder path for mapping CSV files.
-csv_map_files = "botes-csv-map/"
+csv_map_files = "BOTES/botes-csv-map/"
 
 # The following list contains all existing ECS fieldsets.
 existing_fieldsets = ["base", "agent", "as", "client", "cloud", "container", "destination", "dns", "ecs", "error",
