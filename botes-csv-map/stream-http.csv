@@ -1,0 +1,92 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+accept,http.request.accept,Keyword,HTTP,Extended,The Accept HTTP request header.
+accept{},http.request.accept,Keyword,HTTP,Extended,The Accept HTTP request header.
+accept_language,http.request.accept_language,Keyword,HTTP,Extended,The HTTP request header advertises which language a client is able to understand.
+ack_packets_in,client.packets.ack,Long,Client,Extended,The number of acknowledgement packets sent from client to server
+ack_packets_out,server.packets.ack,Long,Server,Extended,The number of acknowledgement packets sent from server to client
+age,http.response.age,Long,HTTP,Extended,The HTTP request header contains the time in seconds the object has been in a proxy cache
+allow,http.header.allow,Keyword,HTTP,Extended,The HTTP entity header lists the set of methods support by a resource.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
+bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
+cached,http.cached,Boolean,HTTP,Extended,"Value 1 if the response was cached, 0 if it was not."
+cached{},http.cached,Boolean,HTTP,Extended,"Value 1 if the response was cached, 0 if it was not."
+canceled,http.canceled.responses,Long,HTTP,Extended,Number of HTTP responses that were canceled early by the client
+c_ip,client.ip,Ip,Client,Core,IP address of the client.
+connection_type,http.header.connection,Keyword,HTTP,Extended,The HTTP general header controls whether or not the network connection stays open after the current transaction finishes.
+connection_type{},http.header.connection,Keyword,HTTP,Extended,The HTTP general header controls whether or not the network connection stays open after the current transaction finishes.
+content_disposition,http.response.content_dispostion,Keyword,HTTP,Extended,The HTTP response header used to indicate the media type of the resource.
+content_disposition{},http.response.content_dispostion,Keyword,HTTP,Extended,The HTTP response header used to indicate the media type of the resource.
+content_encoding,http.header.content_encoding,Keyword,HTTP,Extended,"The HTTP entity header is used to compress the media-type.When present, its value indicates which encodings were applied to the entity-body."
+content_location,http.header.content_location,Keyword,HTTP,Extended,The HTTP entity header indicates an alternate location for the returned data.
+cookie,http.request.cookie,Keyword,HTTP,Extended,The HTTP request header contains stored HTTP cookies previously sent by the server with the Set-Cookie header.
+cookie{},http.request.cookie,Keyword,HTTP,Extended,The HTTP request header contains stored HTTP cookies previously sent by the server with the Set-Cookie header.
+cs_cache_control,http.request.cache_control,Keyword,HTTP,Extended,"Standard Cache-Control directives used by the client in an HTTP request.Caching directives are unidirectional, meaning that a given directive in a request is not implying that the same directive is to be given in the response."
+cs_content_length,http.request.content_length,Long,HTTP,Extended,"The HTTP entity header indicates the size of the entity-body, in bytes, sent to the recipient.HTTP Request in this case."
+cs_content_length{},http.request.content_length,Long,HTTP,Extended,"The HTTP entity header indicates the size of the entity-body, in bytes, sent to the recipient.HTTP Request in this case."
+cs_content_type,http.request.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource.HTTP Request in this case.
+cs_content_type{},http.request.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource.HTTP Request in this case.
+cs_date,http.request.data,Date,HTTP,Extended,The HTTP general header contains the date and time at which the message was originated.HTTP Request in this case.
+cs_date{},http.request.data,Date,HTTP,Extended,The HTTP general header contains the date and time at which the message was originated.HTTP Request in this case.
+cs_pragma,http.request.pragma,Keyword,HTTP,Extended,The HTTP/1.0 general header is an implementation-specific header that may have various effects along the request-response chain.It is used for backwards compatibility with HTTP/1.0 caches.HTTP Request in this case.
+cs_version,http.version,Keyword,HTTP,Extended,HTTP version.
+cs_version{},http.version,Keyword,HTTP,Extended,HTTP version.
+data_packets_in,client.packets.data,Long,Server,Core,Packets sent from the client to the server.
+data_packets_out,server.packets.data,Long,Client,Core,Packets sent from the server to the client.
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+dest_content,http.response.payload,Keyword,HTTP,Extended,All HTTP payload content sent from server to client.
+dest_headers,http.response.headers,Keyword,HTTP,Extended,All HTTP headers sent from server to client.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_port,destination.port,Long,Destination,Core,Port of the destination.
+endtime,network.session.end,Date,Network,Extended,Date/time of the network session ending.
+etag,http.response.etag,Keyword,HTTP,Extended,"The HTTP response header is an identifier for a specific version of a resource.It allows caches to be more efficient, and saves bandwidth."
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+expires,http.response.expires,Date,HTTP,Extended,The HTTP response header contains the date/time after which the response is considered stale.
+http_comment,http.response.status,Keyword,HTTP,Extended,The HTTP response status message returned to the client
+http_content_length,http.response.content_length,Long,HTTP,Extended,"The HTTP entity header indicates the size of the entity-body, in bytes, sent to the recipient.HTTP Response in this case."
+http_content_type,http.response.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource.HTTP Response in this case.
+http_method,http.request.method,Keyword,HTTP,Extended,HTTP request method.
+http_method{},http.request.method,Keyword,HTTP,Extended,HTTP request method.
+http_referrer,http.request.referrer,Keyword,HTTP,Extended,Referrer for this HTTP request.
+http_referrer{},http.request.referrer,Keyword,HTTP,Extended,Referrer for this HTTP request.
+http_user_agent,user_agent.original,Keyword,User_agent,Extended,Unparsed version of the user_agent.
+http_user_agent{},user_agent.original,Keyword,User_agent,Extended,Unparsed version of the user_agent.
+location,http.header.content_location,Keyword,HTTP,Extended,The HTTP entity header indicates an alternate location for the returned data.
+missing_packets_in,client.packets.missing,Long,Client,Extended,The number of missing packet gaps detected within the request.
+missing_packets_out,server.packets.missing,Long,Server,Extended,The number of missing packet gaps detected within the response.
+network_interface,destination.interface,Keyword,Destination,Extended,Interface of the destination.
+packets,network.packets,Long,Network,Core,Total packets transferred in both directions.
+packets_in,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
+packets_out,source.packets,Long,Source,Core,Packets sent from the source to the destination.
+part_filename,file.name,Keyword,File,Extended,"Name of the file including the extension, without the directory."
+part_filename{},file.name,Keyword,File,Extended,"Name of the file including the extension, without the directory."
+protocol,network.protocol,Keyword,Network,Core,"L7 Network protocol name.ex.http, lumberjack, transport protocol."
+message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
+refused,http.request.refused,Long,HTTP,Extended,Number of requests that were refused by the server
+request,http.request.original,Keyword,HTTP,Extended,The request line exactly as it came from the client
+request{},http.request.original,Keyword,HTTP,Extended,The request line exactly as it came from the client
+sc_cache_control,http.response.cache_control,Keyword,HTTP,Extended,"Standard Cache-Control directives used by the server in an HTTP response.Caching directives are unidirectional, meaning that a given directive in a request is not implying that the same directive is to be given in the response."
+sc_date,http.response.data,Date,HTTP,Extended,The HTTP general header contains the date and time at which the message was originated.HTTP Response in this case.
+sc_pragma,http.response.pragma,Keyword,HTTP,Extended,The HTTP/1.0 general header is an implementation-specific header that may have various effects along the request-response chain.It is used for backwards compatibility with HTTP/1.0 caches.HTTP Response in this case.
+server,http.response.server,Keyword,HTTP,Extended,The HTTP response header contains information about the software used by the origin server to handle the request.
+set_cookie,http.response.cookie,Keyword,HTTP,Extended,The HTTP response header is used to send cookies from the server to the user agent.
+site,url.domain,Keyword,Url,Extended,Domain of the url.
+site{},url.domain,Keyword,Url,Extended,Domain of the url.
+src_content,http.request.payload,Keyword,HTTP,Extended,All HTTP payload content sent from client to server.
+src_headers,http.request.headers,Keyword,HTTP,Extended,All HTTP headers sent from client to server.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+status,http.response.status_code,Long,HTTP,Extended,HTTP response status code.
+status{},http.response.status_code,Long,HTTP,Extended,HTTP response status code.
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time_taken,network.session.duration,Long,Network,Core,Duration of the network session.
+transfer_encoding,http.response.transfer_encoding,Keyword,HTTP,Extended,The HTTP response header specifies the form of encoding used to safely transfer the payload body to the user.
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+uri,url.original,Keyword,Url,Extended,"Unmodified original url as seen in the event source. This field is meant to represent the URL as it was observed, complete or not."
+uri_parm,url.fragment,Keyword,Url,Extended,"Portion of the url after the ; or #, such as ""top""."
+uri_path,url.path,Keyword,Url,Extended,"Path of the request, such as ""/search""."
+uri_query,url.query,Keyword,Url,Extended,"The query field describes the query string of the request, such as ""q=elasticsearch""."
+url,url.full,Keyword,Url,Extended,"If full URLs are important to your use case, they should be stored here."
+user,user.name,Keyword,User,Core,Short name or login of the user.

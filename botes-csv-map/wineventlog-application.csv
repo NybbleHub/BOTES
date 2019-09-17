@@ -1,0 +1,39 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+Cab_Id,winlog.cab_id,Keyword,Winlog,Extended,Windows Error Reporting back-end iCab field number.This is 0 if the server did not ask for a cabinet (.cab).
+ComputerName,winlog.computer_name,Keyword,Winlog,Extended,The hostname address of the server on which the log file entry was generated.
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+dvc_nt_host,host.hostname,Keyword,Host,Core,Hostname of the host.
+EventCode,event.code,Keyword,Event,Extended,"Identification code for this event, if one exists."
+Event_Name,winlog.name,Keyword,Winlog,Extended,Report's event name.This is not localized.
+EventType,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+Hashed_bucket,winlog.hashed.bucket,Keyword,Winlog,Extended,Contains a hashed version of a fault bucket number.
+HRESULT,winlog.hresult,Keyword,Winlog,Extended,Contains Windows HRESULT error code.
+Internal_Timing_Sequence,winlog.esent.sequence,Keyword,Winlog,Extended,Contains ESENT Database engine Timing Sequence.
+Keywords,winlog.keywords,Keyword,Winlog,Extended,Contains Windows Event Log keywords.
+LogName,event.category,Keyword,Event,Extended,Windows Event Log category.
+OpCode,winlog.opcode,Long,Winlog,Extended,Contains an opcode decimal code that identifies an operation within the task (<Task>) or one of the predefined global opcodes.
+P1,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+P2,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+P3,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+P4,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+P5,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+P6,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+P7,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+P8,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+P9,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+P10,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters).The message can report up to ten strings."
+message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
+Rechecking_for_solution,winlog.checksolution.flag,Binary,Winlog,Extended,Contains an indicator that shows whether the report was resubmitted by a user to check for a response or solution for the error.
+RecordNumber,event.sequence,Long,Event,Extended,"Contains the record number for the event log record.The very first record written to an event log is record number 1, and other records are numbered sequentially."
+Report_Id,winlog.report.id,Keyword,Winlog,Extended,Contains the unique GUID for a generated crash report
+Report_Status,winlog.wer.status,Long,Winlog,Extended,Contains a decimal mask for WER report status.Status can be a combination of multiple decimal mask.
+Response,winlog.report.response,Keyword,Winlog,Extended,Contains a response string from the Windows Error Reporting server or the string Not available if no response was received.
+Revived_Cache,winlog.esent.revived_cache,Long,Winlog,Extended,Contains ESENT Database engine revived cache.
+Saved_Cache,winlog.esent.saved_cache,Long,Winlog,Extended,Contains ESENT Database engine saved cache.
+Sid,winlog.object.identifier,Keyword,Winlog,Extended,"Contains Windows Security ID, used to identify a security principal or security group in Windows operating systems."
+SidType,winlog.identifier.type,Keyword,Winlog,Extended,"Contains Windows SID Type (User, Group, Domain, Computer, etc.) belonging to the SID."
+SourceName,event.provider,Keyword,Event,Extended,Contains the name of the Windows Event Log source.
+TaskCategory,event.module,Keyword,Event,Extended,Contains name for a subclass of events within the same Event Source.
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+Type,log.level,Keyword,Log,Core,Original log level of the log event.
+User,user.name,Keyword,User,Core,Short name or login of the user.

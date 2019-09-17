@@ -1,0 +1,35 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+hostname,dhcp.client.hostname,Keyword,DHCP,Core,Hostname of the DHCP client.
+ip,dhcp.source.ip,Ip,DHCP,Core,IP address of the DHCP request source.
+lease,dhcp.client.lease,Long,DHCP,Core,Lease duration of the DHCP client.
+mac,dhcp.source.mac,Keyword,DHCP,Core,MAC address of the DHCP request source.
+dhcp_msg,dhcp.message,Keyword,DHCP,Core,DHCP message.
+total,dhcp.total.ip,Long,DHCP,Extended,Total IP address of DHCP server available.
+used,dhcp.used.ip,Long,DHCP,Extended,Total IP address of DHCP server used.
+state,event.action,Keyword,Event,Core,The action captured by the event.
+vendor_action,event.action,Keyword,Event,Core,The action captured by the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+logdesc,event.description,Keyword,Event,Core,Description of the log event.
+logid,event.id,Keyword,Event,Core,Optional log ID from device or observer.
+message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
+status,event.outcome,Keyword,Event,Extended,"The outcome of the event.If the event describes an action, this fields contains the outcome of that action."
+reason,event.reason,Keyword,Event,Extended,Reason of the event outcome.
+sn,event.sequence,Long,Event,Extended,Sequence number of the event.
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+level,log.level,Keyword,Log,Core,Original log level of the log event.
+subtype,log.subtype,Keyword,Log,Extended,Log Subtype.
+type,log.type,Keyword,Log,Extended,Log Type.
+msg,message,Text,Base,Core,"For log events the message field contains the log message, optimized for viewing in a log viewer."
+bandwidth,network.bandwidth,Keyword,Network,Extended,Bandwidth of the device (In bytes).
+devname,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
+devid,observer.id,Keyword,Observer,Extended,Device identifier of the observer.
+host,observer.ip,Ip,Observer,Core,IP address of the observer.
+profile,threat.profile.name,Keyword,Threat,Extended,The name of the profile that was used to detect threat(s) and take action.
+count,threat.quarantine.count,Long,Threat,Extended,Quarantined object/threat count per hour  by observer. 
+product,observer.type,Keyword,Observer,Core,The type of the observer the data is coming from.
+vendor,observer.vendor,Keyword,Observer,Core,Observer vendor information.
+interface,source.interface,Keyword,Source,Core,Interface of the source.
+ui,source.user.interface,Keyword,Source,Extended,Interface used by user.
+src_user,source.user.name,Keyword,Source,Core,Short name or login of the source user.
+user,source.user.name,Keyword,Source,Core,Short name or login of the source user.

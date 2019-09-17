@@ -1,0 +1,39 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+Adapter_Name,winlog.adapter.name,Keyword,Winlog,Extended,Contains the interface GUID of the network adapter.
+Adapter_specific_Domain_Suffix,winlog.adapter.domain,Keyword,Winlog,Extended,Contains the network adapter domain suffix.
+Change_Reason,winlog.change.reason,Keyword,Winlog,Extended,Contains the Change Reasons text value.
+ComputerName,winlog.computer_name,Keyword,Winlog,Extended,The hostname address of the server on which the log file entry was generated.
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+EventCode,event.code,Keyword,Event,Extended,"Identification code for this event, if one exists."
+EventType,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+Host_Name,host.hostname,Keyword,Host,Core,Hostname of the host.
+Idle_state_type,winlog.idle_state.type,Keyword,Winlog,Extended,Contains the Idle State Type.
+Keywords,winlog.keywords,Keyword,Winlog,Extended,Contains Windows Event Log keywords.
+LogName,event.category,Keyword,Event,Extended,Windows Event Log category.
+Maximum_performance_percentage,winlog.performance.max,Long,Winlog,Extended,Contains the Maximum performance percentage.
+Minimum_performance_percentage,winlog.performance.min,Long,Winlog,Extended,Contains the Minimum performance percentage.
+Minimum_throttle_percentage,winlog.throttle.min,Long,Winlog,Extended,Contains the Minimum throttle percentage.
+Module_Path,winlog.module.path,Keyword,Winlog,Extended,Contains the full module path.
+Nominal_Frequency__MHz_,winlog.nominal.frequency,Long,Winlog,Extended,Contains the Nominal Frequency in (MHz)
+OpCode,winlog.opcode,Long,Winlog,Extended,Contains an opcode decimal code that identifies an operation within the task (<Task>) or one of the predefined global opcodes.
+Performance_state_type,winlog.perf_state.type,Keyword,Winlog,Extended,Contains the Performance state type.
+message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
+RecordNumber,event.sequence,Long,Event,Extended,"Contains the record number for the event log record.The very first record written to an event log is record number 1, and other records are numbered sequentially."
+Sent_update_to_server,winlog.dns.update,Keyword,Winlog,Extended,Contains the update send to the DNS server.
+Service_Account,winlog.service.account,Keyword,Winlog,Extended,"Contains the security context that the service will run as when started.Note that this is what was configured when the service was installed, if the account is changed later that is not logged."
+Service_File_Name,service.file.path,Keyword,Service,Extended,Contains the fully rooted path to the file that the Service Control Manager will execute to start the service.
+Service_Name,service.name,Keyword,Service,Core,Contains the name of the installed service or service data is collected from.
+Service_Start_Type,service.start_ype,Keyword,Service,Extended,Contains she service start type can have one of the following values
+Service_Type,service.type,Keyword,Service,Core,Contains the type of the installed service or service data is collected from.
+Sid,winlog.object.identifier,Keyword,Winlog,Extended,"Contains Windows Security ID, used to identify a security principal or security group in Windows operating systems."
+SidType,winlog.identifier.type,Keyword,Winlog,Extended,"Contains Windows SID Type (User, Group, Domain, Computer, etc.) belonging to the SID."
+signature,event.description,Keyword,Event,Core,Contains Windows EventID description.
+Sleep_Reason,winlog.sleep.reason,Keyword,Winlog,Extended,Contains the Sleep Reason.
+Sleep_Time,winlog.sleep.time,Date,Winlog,Extended,Contains the Sleep Time.
+SourceName,event.provider,Keyword,Event,Extended,Contains the name of the Windows Event Log source.
+TaskCategory,winlog.task_category,Keyword,Winlog,Extended,Contains the Windows Event Log Task Category.
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+Type,log.level,Keyword,Log,Core,Original log level of the log event.
+User,user.name,Keyword,User,Core,Short name or login of the user.
+Wake_Source,winlog.wake.source,Keyword,Winlog,Extended,Contains the Wake up source.
+Wake_Time,winlog.wake.time,Date,Winlog,Extended,Contains the Wake up time.

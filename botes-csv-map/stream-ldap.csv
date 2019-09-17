@@ -1,0 +1,22 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+assertion_description{},ldap.assertion.description,Keyword,LDAP,Extended,"Filter expression second operand, which is an assertion value."
+assertion_value{},ldap.assertion.value,Keyword,LDAP,Extended,"Filter expression first operand, which is an attribute description."
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
+bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
+contains_sasl,ldap.sasl.enable,Boolean,LDAP,Extended,Indicates whether the authentication is done using SASL mechanism.
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_port,destination.port,Long,Destination,Core,Port of the destination.
+elements,ldap.original.elements,Keyword,LDAP,Extended,"LDAP element, map containing name-value pairs with nested elements."
+endtime,network.session.end,Date,Network,Extended,Date/time of the network session ending.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+message_id,ldap.transaction.id,Keyword,LDAP,Extended,LDAP query identifier.
+message_type,ldap.message.type,Keyword,LDAP,Extended,LDAP message type.
+message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"

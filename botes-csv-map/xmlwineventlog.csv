@@ -1,0 +1,56 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+CommandLine,process.full,Keyword,Process,Extended,"Contains full path, the name and option(s) of the executable for the process."
+Computer,winlog.computer_name,Keyword,Winlog,Extended,The hostname address of the server on which the log file entry was generated.
+CreationUtcTime,file.ctime,Date,File,Extended,Contains the most recent time after file creation or modification.
+CurrentDirectory,process.working_directory,Keyword,Process,Extended,Contains full path of the executable for the process.
+DestinationHostname,destination.hostname,Keyword,Destination,Extended,Contains the Host Name of the destination.
+DestinationIp,destination.ip,Ip,Destination,Core,Contains the IP address of the destination.
+DestinationIsIpv6,destination.ipv6.flag,Binary,Destination,Extended,Contains an indicator that shows whether destination IP is an IPv6 or not (True or False).
+DestinationPort,destination.port,Long,Destination,Core,Contains Port of the destination.
+DestinationPortName,network.protocol,Keyword,Network,Core,"L7 Network protocol name.ex.http, lumberjack, transport protocol."
+dvc_nt_host,host.hostname,Keyword,Host,Core,Hostname of the host.
+EventChannel,event.provider,Keyword,Event,Extended,Contains the name of the Windows Event Log source.
+EventCode,event.code,Keyword,Event,Extended,"Identification code for this event, if one exists."
+EventDescription,event.description,Keyword,Event,Core,Contains Windows EventID description.
+file_name,file.name,Keyword,File,Extended,"Name of the file including the extension, without the directory."
+Hashes,file.hash.table,Keyword,File,Extended,Contains diffrent algorithm file hash in table.
+Image,process.name,Keyword,Process,Extended,Contains full path and the name of the executable for the process.
+ImageLoaded,process.name,Keyword,Process,Extended,Contains full path and the name of the module for the process.
+IMPHASH,file.hash.imp,Keyword,File,Extended,Contains the IMP filehash.
+Initiated,winlog.connection_init.flag,Binary,Winlog,Extended,Contains an indicator that shows whether process initiated a TCP connection or not (True or False).
+IntegrityLevel,winlog.integrity.level,Keyword,Winlog,Extended,Contains the integrity level assigned to the process.
+Keywords,winlog.keywords,Keyword,Winlog,Extended,Contains Windows Event Log keywords.
+Level,event.severity,Keyword,Event,Core,Severity describes the original severity of the event.
+LogonGuid,source.user.id,Keyword,Source,Core,Contains the Logon GUID of the user who created the new process.
+LogonId,winlog.logon.id,Keyword,Winlog,Extended,Contains the Logon ID of the user who created the new process.
+MD5,file.hash.md5,Keyword,File,Extended,Contains the MD5 filehash.
+Opcode,winlog.opcode,Long,Winlog,Extended,Contains an opcode decimal code that identifies an operation within the task (<Task>) or one of the predefined global opcodes.
+ParentCommandLine,process.full,Keyword,Process,Extended,"Contains full path, the name and option(s) of the parent for the process."
+ParentImage,process.pname,Keyword,Process,Extended,Contains full path and the name of the parent for the process.
+ParentProcessGuid,process.pguid,Keyword,Process,Extended,Contains the Process GUID of the process that spawned/created the main process.
+ParentProcessId,process.ppid,Keyword,Process,Extended,Contains the Process ID of the process that spawned/created the main process.
+PreviousCreationUtcTime,file.pctime,Date,File,Extended,Contains the most recent time before file creation or modification.
+process,process.name,Keyword,Process,Extended,Contains the Process name.Sometimes called program name or similar.
+ProcessGuid,process.guid,Keyword,Process,Core,Contains the Process Guid of the process that made the network connection.
+ProcessId,process.pid,Keyword,Process,Core,Contains the Process ID used by the os to identify the process that made the network connection.
+Protocol,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
+RecordID,event.sequence,Long,Event,Extended,"Contains the record number for the event log record.The very first record written to an event log is record number 1, and other records are numbered sequentially."
+SecurityID,winlog.object.identifier,Keyword,Winlog,Extended,Contains the SID of account that requested privileged operation.Event Viewer automatically tries to resolve SIDs and show the account name.
+SHA1,file.hash.sha1,Keyword,File,Extended,Contains the SHA1 filehash.
+SHA256,file.hash.sha256,Keyword,File,Extended,Contains the SHA256 filehash.
+Signature,winlog.process.signature,Keyword,Winlog,Extended,Contains the signer of the Process/Module.
+Signed,winlog.process_signed.flag,Binary,Winlog,Extended,Contains an indicator that shows whether process/module is signed or not (True or False).
+SourceHostname,source.hostname,Keyword,Source,Extended,Contains the Host Name of the source.
+SourceIp,source.ip,Ip,Source,Core,Contains the IP address of the source.
+SourceIsIpv6,source.ipv6.flag,Binary,Source,Extended,Contains an indicator that shows whether source IP is an IPv6 or not (True or False).
+SourcePort,source.port,Long,Source,Core,Contains Port of the source.
+SourcePortName,network.protocol,Keyword,Network,Core,"L7 Network protocol name.ex.http, lumberjack, transport protocol."
+TargetFilename,file.path,Keyword,File,Extended,Full path to the file.
+Task,winlog.task,Long,Winlog,Extended,Contains the Task ID.
+TerminalSessionId,winlog.terminal.session_id,Long,Winlog,Extended,Contains the ID of the session the user belongs to.
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+TimeCreated,process.start,Date,Process,Extended,Contains the Local Timezone Time of file/process creation.
+User,user.name,Keyword,User,Core,Short name or login of the user.
+UtcTime,winlog.process.time_utc,Date,,Extended,Contains the UTC Time of file/process creation.
+Version,winlog.sysmon.schema_version,Long,,Extended,Contains the Sysmon Schema version.

@@ -1,0 +1,966 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+msg,message,Text,Base,Core,"For log events the message field contains the log message, optimized for viewing in a log viewer."
+data_packets_in,botes.client.packets.data,Long,Client,Extended,Packets sent from the client to the server.
+missing_packets_in,botes.client.packets.missing,Long,Client,Extended,The number of missing packet gaps detected within the request.
+missing_packets_in,botes.client.packets.missing,Long,Client,Extended,The number of missing packet gaps detected within the request.
+crlevel,botes.client.reputation.level,Keyword,Client,Extended,Client Reputation Level.
+crlevel,botes.client.reputation.level,Keyword,Client,Extended,Client Reputation Level.
+crscore,botes.client.reputation.score,Long,Client,Extended,Client Reputation Score.
+crscore,botes.client.reputation.score,Long,Client,Extended,Client Reputation Score.
+bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
+bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
+bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
+bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
+bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
+bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
+bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
+c_ip,client.ip,Ip,Client,Core,IP address of the client.
+cs_username,client.user.name,Keyword,Client,Core,The name of the authenticated user that accessed the server. Anonymous users are indicated by a hyphen.
+hostname,botes.destination.hostname,Keyword,Destination,Extended,Contains the Host Name of the destination.
+netbios-name,botes.destination.hostname,Keyword,Destination,Extended,Contains the Host Name of the destination.
+Target_Server_Name,botes.destination.hostname,Keyword,Destination,Extended,"Contains the name of the server on which the new process was run. Has ""localhost"" value if the process was run locally."
+DestinationHostname,botes.destination.hostname,Keyword,Destination,Extended,Contains the Host Name of the destination.
+dstintf,botes.destination.interface,Keyword,Destination,Extended,Interface of the destination.
+dstintf,botes.destination.interface,Keyword,Destination,Extended,Interface of the destination.
+in_iface,botes.destination.interface,Keyword,Destination,Extended,Interface of the destination.
+network_interface,botes.destination.interface,Keyword,Destination,Extended,Interface of the destination.
+DestinationIsIpv6,botes.destination.ipv6.flag,Boolean,Destination,Extended,Contains an indicator that shows whether destination IP is an IPv6 or not (True or False).
+rcvdbyte,destination.bytes,Long,Destination,Core,Bytes sent from the destination to the source.
+rcvdbyte,destination.bytes,Long,Destination,Core,Bytes sent from the destination to the source.
+flow.bytes_toclient,destination.bytes,Long,Destination,Core,Bytes sent from the destination to the source.
+bytes_in,destination.bytes,Long,Destination,Core,Bytes sent from the destination to the source.
+dstip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dstip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+host-ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+DestinationIp,destination.ip,Ip,Destination,Core,Contains the IP address of the destination.
+mac-address,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
+tranip,destination.nat.ip,Ip,Destination,Extended,NAT destination IP.
+tranport,destination.nat.port,Long,Destination,Extended,NAT Destination Port.
+operating-system,destination.os.full,Keyword,Destination,Extended,"Contains the full scanned destination(s) Operating system name, including the version or code name."
+rcvdpkt,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
+flow.pkts_toclient,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
+packets_in,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
+packets_in,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
+packets_in,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
+packets_in,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
+dstport,destination.port,Long,Destination,Core,Contains Port of the destination.
+dstport,destination.port,Long,Destination,Core,Contains Port of the destination.
+dest_port,destination.port,Long,Destination,Core,Contains Port of the destination.
+ports{}.port,destination.port,Long,Destination,Core,Contains Port of the destination.
+dest_port,destination.port,Long,Destination,Core,Contains Port of the destination.
+dest_port,destination.port,Long,Destination,Core,Contains Port of the destination.
+dest_port,destination.port,Long,Destination,Core,Contains Port of the destination.
+dest_port,destination.port,Long,Destination,Core,Contains Port of the destination.
+dest_port,destination.port,Long,Destination,Core,Contains Port of the destination.
+dest_port,destination.port,Long,Destination,Core,Contains Port of the destination.
+dest_port,destination.port,Long,Destination,Core,Contains Port of the destination.
+dest_port,destination.port,Long,Destination,Core,Contains Port of the destination.
+DestinationPort,destination.port,Long,Destination,Core,Contains Port of the destination.
+Network_Account_Domain,destination.user.domain,Keyword,Destination,Extended,Name of the directory the destination user is a member of.
+Network_Account_Name,destination.user.name,Keyword,Destination,Core,Short name or login of the destination user.
+siaddr,dhcp.bootstrap.server.ip,Ip,DHCP,Extended,"IP address of next server to use in bootstrap. Returned in DHCPOFFER, DHCPACK by server."
+hostname,dhcp.client.hostname,Keyword,DHCP,Extended,Hostname of the DHCP client.
+ciaddr,dhcp.client.ip,Ip,DHCP,Extended,"IP address of the DHCP client. Only filled in if client is in BOUND, RENEW or REBINDING state and can respond to ARP requests."
+lease,dhcp.client.lease,Long,DHCP,Extended,Lease duration of the DHCP client.
+ip_lease_time,dhcp.client.lease,Long,DHCP,Extended,Lease duration of the DHCP client.
+chaddr,dhcp.client.mac,Keyword,DHCP,Extended,MAC address of the DHCP client.
+dhcp_msg,dhcp.message,Keyword,DHCP,Extended,DHCP message.
+opcode,dhcp.message,Keyword,DHCP,Extended,DHCP message.
+dns_server,dhcp.offer.dns,Ip,DHCP,Extended,DNS Server IP offered to client.
+router,dhcp.offer.gateway,Ip,DHCP,Extended,Gateway IP offered to client.
+yiaddr,dhcp.offer.ip,Ip,DHCP,Extended,IP address offered (DHCPOFFER) or assigned (DHCPACK) to client.
+subnetmask,dhcp.offer.subnetmask,Ip,DHCP,Extended,Subnet mask offered to client.
+giaddr,dhcp.relay.ip,Ip,DHCP,Extended,"Relay agent IP address, used in booting via a relay agent. Value is 0x0 if no relay and client is on the same subnet as the server."
+host,dhcp.server.hostname,Keyword,DHCP,Extended,Hostname of the DHCP server.
+ip,dhcp.source.ip,Ip,DHCP,Extended,IP address of the DHCP request source.
+mac,dhcp.source.mac,Keyword,DHCP,Extended,MAC address of the DHCP request source.
+total,dhcp.total.ip,Long,DHCP,Extended,Total IP address of DHCP server available.
+transaction_id,dhcp.transaction.id,Keyword,DHCP,Extended,DHCP query identifier.
+used,dhcp.used.ip,Long,DHCP,Extended,Total IP address of DHCP server used.
+reverse_addr{},botes.dns.answers.reverse,Ip,DNS,Extended,IP address returned to the PTR request.
+response_time,botes.dns.response_time,Long,DNS,Extended,"Elapsed time between sending of the dns request and reception of its response, in microseconds."
+answer,dns.answers.data,Keyword,DNS,Extended,Answer from DNS for a query.
+host_addr{},dns.answers.data,Keyword,DNS,Extended,Answer from DNS for a query.
+dns.rdata,dns.answers.data,Keyword,DNS,Extended,DNS data  (ex. IP that domain name resolves to).
+hostname{},dns.answers.data,Keyword,DNS,Extended,DNS data  (ex. IP that domain name resolves to).
+query,dns.answers.data,Keyword,DNS,Extended,DNS data  (ex. IP that domain name resolves to).
+dns.rrname,dns.answers.name,Keyword,DNS,Extended,DNS record name (ex: a domain name).
+name{},dns.answers.name,Keyword,DNS,Extended,DNS record name (ex: a domain name).
+dns.ttl,dns.answers.ttl,Long,DNS,Extended,Time (in seconds) a DNS information returned by the server will be kept in cache.
+ttl{},dns.answers.ttl,Long,DNS,Extended,Time (in seconds) a DNS information returned by the server will be kept in cache.
+dns.rrtype,dns.answers.type,Keyword,DNS,Extended,"DNS Record type (ex: A, AAAA, NS, PTR)."
+record_type,dns.answers.type,Keyword,DNS,Extended,"DNS Record type (ex: A, AAAA, NS, PTR)."
+dns.id,dns.id,Keyword,DNS,Extended,DNS query identifier.
+transaction_id,dns.id,Keyword,DNS,Extended,DNS query identifier.
+dns.rcode,dns.response_code,Keyword,DNS,Extended,Contains the DNS response code.
+reply_code,dns.response_code,Keyword,DNS,Extended,DNS return message for request.
+dns.type,dns.type,Keyword,DNS,Extended,"Indicating DNS message type, can be ""answer"" or ""query""."
+message_type,dns.type,Keyword,DNS,Extended,"Indicating DNS message type, can be ""answer"" or ""query""."
+Error_Code,error.code,Keyword,Error,Core,"Contains error code for Failure events. For Success events this parameter has ""0x0"" value."
+logdesc,botes.event.description,Keyword,Event,Extended,Description of the log event.
+msg,botes.event.description,Keyword,Event,Extended,Description of the log event.
+event_status,botes.event.description,Keyword,Event,Extended,Description of the log event.
+subject,botes.event.description,Keyword,Event,Extended,Contains Windows EventID description.
+signature,botes.event.description,Keyword,Event,Extended,Contains Windows EventID description.
+EventDescription,botes.event.description,Keyword,Event,Extended,Contains Windows EventID description.
+reason,botes.event.reason,Keyword,Event,Extended,Reason of the event outcome.
+s_ip,botes.event.source.ip,Ip,Event,Extended,The IP address of the server on which the log file entry was generated.
+state,event.action,Keyword,Event,Core,The action captured by the event.
+vendor_action,event.action,Keyword,Event,Core,The action captured by the event.
+registry_type,event.action,Keyword,Event,Core,The action captured by the event. This describes the information in the event. It is more specific than event.category.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+alert.category,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+event_type,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+EventType,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+LogName,event.category,Keyword,Event,Core,Windows Event Log category.
+EventType,event.category,Keyword,Event,Core,Contains high-level information about the contents of the event.
+LogName,event.category,Keyword,Event,Core,Windows Event Log category.
+EventType,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+LogName,event.category,Keyword,Event,Core,Windows Event Log category.
+EventCode,event.code,Keyword,Event,Extended,"Identification code for this event, if one exists."
+EventCode,event.code,Keyword,Event,Extended,"Identification code for this event, if one exists."
+EventCode,event.code,Keyword,Event,Extended,"Identification code for this event, if one exists."
+EventCode,event.code,Keyword,Event,Extended,"Identification code for this event, if one exists."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+logid,event.id,Keyword,Event,Core,Optional log ID from device or observer.
+logid,event.id,Keyword,Event,Core,Optional log ID from device or observer.
+logid,event.id,Keyword,Event,Core,Optional log ID from device or observer.
+TaskCategory,event.module,Keyword,Event,Core,Contains name for a subclass of events within the same Event Source.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+message,event.original,Keyword,Event,Core,Raw text message of entire event. Used to demonstrate log integrity.
+status,event.outcome,Keyword,Event,Extended,"The outcome of the event. If the event describes an action, this fields contains the outcome of that action."
+vendor_action,event.outcome,Keyword,Event,Extended,"The outcome of the event. If the event describes an action, this fields contains the outcome of that action."
+vendor_action,event.outcome,Keyword,Event,Extended,"The outcome of the event. If the event describes an action, this fields contains the outcome of that action."
+alert.action,event.outcome,Keyword,Event,Extended,"The outcome of the event. If the event describes an action, this fields contains the outcome of that action."
+status,event.outcome,Keyword,Event,Extended,"The outcome of the event. If the event describes an action, this fields contains the outcome of that action."
+SourceName,event.provider,Keyword,Event,Extended,Contains the name of the Windows Event Log source.
+SourceName,event.provider,Keyword,Event,Extended,Contains the name of the Windows Event Log source.
+SourceName,event.provider,Keyword,Event,Extended,Contains the name of the Windows Event Log source.
+EventChannel,event.provider,Keyword,Event,Extended,Contains the name of the Windows Event Log source.
+sn,event.sequence,Long,Event,Extended,Sequence number of the event.
+RecordNumber,event.sequence,Long,Event,Extended,"Contains the record number for the event log record. The very first record written to an event log is record number 1, and other records are numbered sequentially."
+RecordNumber,event.sequence,Long,Event,Extended,"Contains the record number for the event log record. The very first record written to an event log is record number 1, and other records are numbered sequentially."
+RecordNumber,event.sequence,Long,Event,Extended,"Contains the record number for the event log record. The very first record written to an event log is record number 1, and other records are numbered sequentially."
+RecordID,event.sequence,Long,Event,Extended,"Contains the record number for the event log record. The very first record written to an event log is record number 1, and other records are numbered sequentially."
+severity,event.severity,Keyword,Event,Core,Severity describes the original severity of the event.
+alert.severity,event.severity,Keyword,Event,Core,Severity describes the original severity of the event.
+severity,event.severity,Keyword,Event,Core,Severity describes the original severity of the event.
+Level,event.severity,Keyword,Event,Core,Severity describes the original severity of the event.
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+analyticssubmit,botes.file.analysis.flag,Boolean,FIle,Extended,Analysis status of particular file (true or false).
+IMPHASH,botes.file.hash.imp,Keyword,File,Extended,Contains the IMP filehash.
+Hashes,botes.file.hash.table,Keyword,File,Extended,Contains diffrent algorithm file hash in table.
+PreviousCreationUtcTime,botes.file.pctime,Date,File,Extended,Contains the most recent time before file creation or modification.
+CreationUtcTime,file.ctime,Date,File,Extended,Contains the most recent time after file creation or modification.
+MD5,file.hash.md5,Keyword,File,Extended,Contains the MD5 filehash.
+SHA1,file.hash.sha1,Keyword,File,Extended,Contains the SHA1 filehash.
+analyticscksum,file.hash.sha256,Keyword,File,Extended,SH256 file hash.
+file_hash,file.hash.sha256,Keyword,File,Extended,The hash fields represent different hash algorithms and their values.
+SHA256,file.hash.sha256,Keyword,File,Extended,Contains the SHA256 filehash.
+filename,file.name,Keyword,File,Extended,"Name of the file including the extension, without the directory."
+part_filename,file.name,Keyword,File,Extended,"Name of the file including the extension, without the directory."
+part_filename{},file.name,Keyword,File,Extended,"Name of the file including the extension, without the directory."
+filename,file.name,Keyword,File,Extended,"Name of the file including the extension, without the directory."
+filename{},file.name,Keyword,File,Extended,"Name of the file including the extension, without the directory."
+file_name,file.name,Keyword,File,Extended,"Name of the file including the extension, without the directory."
+file_path,file.path,Keyword,File,Extended,Full path to the file.
+fileinfo.filename,file.path,Keyword,File,Extended,Full path to the file.
+path,file.path,Keyword,File,Extended,Full path to the file.
+File_Name,file.path,Keyword,File,Extended,Full path to the file.
+TargetFilename,file.path,Keyword,File,Extended,Full path to the file.
+fileinfo.size,file.size,Long,File,Extended,File size in bytes.
+filesize,file.size,Long,File,Extended,File size in bytes.
+filesize{},file.size,Long,File,Extended,File size in bytes.
+Link_Name,file.target_path,Keyword,File,Extended,Target path for symlinks.
+Relative_Target_Name,file.target_path,Keyword,File,Extended,Contains the relative name of the accessed target file or folder. This file-path is relative to the network share.
+mastersrcmac,botes.host.master.mac,Keyword,Host,Core,The master MAC address for a host that has multiple network interfaces.
+host,host.hostname,Keyword,Host,Core,Hostname of the host.
+dvc_nt_host,host.hostname,Keyword,Host,Core,Hostname of the host.
+dvc_nt_host,host.hostname,Keyword,Host,Core,Hostname of the host.
+Host_Name,host.hostname,Keyword,Host,Core,Hostname of the host.
+dvc_nt_host,host.hostname,Keyword,Host,Core,Hostname of the host.
+native_os,host.os.full,Keyword,Host,Extended,"Client operating system name, including the version or code name."
+native_os{},host.os.full,Keyword,Host,Extended,"Client operating system name, including the version or code name."
+location,botes.http.header.content_location,Keyword,HTTP,Extended,The HTTP entity header indicates an alternate location for the returned data.
+http.redirect,botes.http.redirect.url,Keyword,HTTP,Extended,URL of HTTP redirect.
+cs_content_type,botes.http.request.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource. HTTP Request in this case.
+cs_content_type{},botes.http.request.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource. HTTP Request in this case.
+cs_date,botes.http.request.date,Date,HTTP,Extended,The HTTP general header contains the date and time at which the message was originated. HTTP Request in this case.
+cs_date{},botes.http.request.date,Date,HTTP,Extended,The HTTP general header contains the date and time at which the message was originated. HTTP Request in this case.
+src_headers,botes.http.request.headers,Keyword,HTTP,Extended,All HTTP headers sent from client to server.
+request,botes.http.request.original,Keyword,HTTP,Extended,The request line exactly as it came from the client
+request{},botes.http.request.original,Keyword,HTTP,Extended,The request line exactly as it came from the client
+cs_pragma,botes.http.request.pragma,Keyword,HTTP,Extended,The HTTP/1.0 general header is an implementation-specific header that may have various effects along the request-response chain. It is used for backwards compatibility with HTTP/1.0 caches. HTTP Request in this case.
+refused,botes.http.request.refused,Long,HTTP,Extended,Number of requests that were refused by the server
+refused,botes.http.request.refused,Long,HTTP,Extended,Number of requests that were refused by the server
+reqtype,botes.http.request.type,Keyword,HTTP,Extended,"HTTP Request type (Direct, Referral, etc.)."
+sc_cache_control,botes.http.response.cache_control,Keyword,HTTP,Extended,"Standard Cache-Control directives used by the server in an HTTP response. Caching directives are unidirectional, meaning that a given directive in a request is not implying that the same directive is to be given in the response."
+http.length,botes.http.response.content_length,Long,HTTP,Extended,Size in bytes of the response body.
+http_content_length,botes.http.response.content_length,Long,HTTP,Extended,"The HTTP entity header indicates the size of the entity-body, in bytes, sent to the recipient. HTTP Response in this case."
+http.http_content_type,botes.http.response.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource. HTTP Request in this case.
+http_content_type,botes.http.response.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource. HTTP Response in this case.
+set_cookie,botes.http.response.cookie,Keyword,HTTP,Extended,The HTTP response header is used to send cookies from the server to the user agent.
+sc_date,botes.http.response.date,Date,HTTP,Extended,The HTTP general header contains the date and time at which the message was originated. HTTP Response in this case.
+etag,botes.http.response.etag,Keyword,HTTP,Extended,"The HTTP response header is an identifier for a specific version of a resource. It allows caches to be more efficient, and saves bandwidth."
+expires,botes.http.response.expires,Date,HTTP,Extended,The HTTP response header contains the date/time after which the response is considered stale.
+dest_headers,botes.http.response.headers,Keyword,HTTP,Extended,All HTTP headers sent from server to client.
+sc_pragma,botes.http.response.pragma,Keyword,HTTP,Extended,The HTTP/1.0 general header is an implementation-specific header that may have various effects along the request-response chain. It is used for backwards compatibility with HTTP/1.0 caches. HTTP Response in this case.
+server,botes.http.response.server,Keyword,HTTP,Extended,The HTTP response header contains information about the software used by the origin server to handle the request.
+http_comment,botes.http.response.status,Keyword,HTTP,Extended,The HTTP response status message returned to the client
+sc_substatus,botes.http.response.substatus_code,Long,HTTP,Extended,The substatus of the HTTP error code.
+transfer_encoding,botes.http.response.transfer_encoding,Keyword,HTTP,Extended,The HTTP response header specifies the form of encoding used to safely transfer the payload body to the user.
+time_taken,botes.http.session.duration,Long,HTTP,Extended,Duration of the HTTP session in milliseconds.
+http.xff,botes.http.xff,Keyword,HTTP,Extended,HTTP X-Forwarded-For support by adding an extra field or overwriting the source or destination IP address.
+src_content,http.request.body.content,Keyword,HTTP,Extended,All HTTP payload content sent from client to server.
+http.http_method,http.request.method,Keyword,HTTP,Extended,HTTP request method.
+cs_method,http.request.method,Keyword,HTTP,Extended,HTTP request method.
+http_method,http.request.method,Keyword,HTTP,Extended,HTTP request method.
+http_method{},http.request.method,Keyword,HTTP,Extended,HTTP request method.
+http.http_refer,http.request.referrer,Keyword,HTTP,Extended,Referrer for this HTTP request.
+cs_Referer,http.request.referrer,Keyword,HTTP,Extended,Referrer for this HTTP request.
+http_referrer,http.request.referrer,Keyword,HTTP,Extended,Referrer for this HTTP request.
+http_referrer{},http.request.referrer,Keyword,HTTP,Extended,Referrer for this HTTP request.
+dest_content,http.response.body.content,Keyword,HTTP,Extended,All HTTP payload content sent from server to client.
+http.status,http.response.status_code,Long,HTTP,Extended,HTTP response status code.
+sc_status,http.response.status_code,Long,HTTP,Extended,HTTP response status code.
+status,http.response.status_code,Long,HTTP,Extended,HTTP response status code.
+status{},http.response.status_code,Long,HTTP,Extended,HTTP response status code.
+http.protocol,http.version,Keyword,HTTP,Extended,HTTP version.
+cs_version,http.version,Keyword,HTTP,Extended,HTTP version.
+cs_version{},http.version,Keyword,HTTP,Extended,HTTP version.
+checksum,icmp.checksum,Long,ICMP,Extended,ICMP checksum.
+icmp_code,icmp.code.id,Long,ICMP,Extended,ICMP code id.
+code,icmp.code.id,Long,ICMP,Extended,ICMP code id.
+code_string,icmp.code.name,Keyword,ICMP,Extended,ICMP code name.
+sequence,icmp.sequence.id,Long,ICMP,Extended,ICMP sequence id.
+id,icmp.transaction.id,Long,ICMP,Extended,ICMP query identifier.
+icmp_type,icmp.type.id,Long,ICMP,Extended,ICMP type id.
+type,icmp.type.id,Long,ICMP,Extended,ICMP type id.
+type_string,icmp.type.name,Keyword,ICMP,Extended,ICMP type name.
+assertion_description{},ldap.assertion.description,Keyword,LDAP,Extended,"Filter expression second operand, which is an assertion value."
+assertion_value{},ldap.assertion.value,Keyword,LDAP,Extended,"Filter expression first operand, which is an attribute description."
+message_type,ldap.message.type,Keyword,LDAP,Extended,LDAP message type.
+elements,ldap.original.elements,Keyword,LDAP,Extended,"LDAP element, map containing name-value pairs with nested elements."
+contains_sasl,ldap.sasl.enable,Boolean,LDAP,Extended,Indicates whether the authentication is done using SASL mechanism.
+message_id,ldap.transaction.id,Keyword,LDAP,Extended,LDAP query identifier.
+subtype,botes.log.subtype,Keyword,Log,Extended,Log Subtype.
+subtype,botes.log.subtype,Keyword,Log,Extended,Log Subtype.
+subtype,botes.log.subtype,Keyword,Log,Extended,Log Subtype.
+type,botes.log.type,Keyword,Log,Extended,Log Type.
+type,botes.log.type,Keyword,Log,Extended,Log Type.
+type,botes.log.type,Keyword,Log,Extended,Log Type.
+level,log.level,Keyword,Log,Core,Original log level of the log event.
+level,log.level,Keyword,Log,Core,Original log level of the log event.
+level,log.level,Keyword,Log,Core,Original log level of the log event.
+severity_id,log.level,Keyword,Log,Core,Original log level of the log event.
+Type,log.level,Keyword,Log,Core,Original log level of the log event.
+Type,log.level,Keyword,Log,Core,Original log level of the log event.
+Type,log.level,Keyword,Log,Core,Original log level of the log event.
+auth_type,mapi.auth.type,Keyword,MAPI,Extended,Authentication type used.
+auth_type{},mapi.auth.type,Keyword,MAPI,Extended,Authentication type used.
+hasaudittrail,nessus.audittrail.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether an Audit Trail  is available or not (True or False).
+control,nessus.control.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether Nessus control is disabled or not (True or False).
+edit_allowed,nessus.edit.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether Nessus edit is allowed or not (True or False).
+folder_id,nessus.folder.id,Long,Nessus,Extended,Contains the Nessus folder ID.
+hostcount,nessus.host.count,Long,Nessus,Extended,Contains the scanned number of servers in targeted network.
+host_id,nessus.host.id,Long,Nessus,Extended,Contains the Nessus host ID for the scan.
+haskb,nessus.kb.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether a KB  is available or not (True or False).
+object_id,nessus.object.id,Long,Nessus,Extended,Contains the Nessus Object ID.
+pci-can-upload,nessus.pciupload.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether Nessus PCI upload is allowed or not (True or False).
+plugin_family,nessus.plugin.family,Keyword,Nessus,Extended,Contains the Nessus Plugin Family.
+plugin_id,nessus.plugin.id,Keyword,Nessus,Extended,Contains the Nessus Plugin ID.
+plugin_name,nessus.plugin.name,Keyword,Nessus,Extended,Contains the Nessus Plugin Name.
+policy,nessus.policy.name,Keyword,Nessus,Extended,Contains the Nessus Policy Name.
+count,nessus.scan.count,Long,Nessus,Extended,Contains the number of open ports or vulnerabilties found.
+host_end,nessus.scan.end,Date,Nessus,Extended,Contains the time of the last host scan.
+name,nessus.scan.name,Keyword,Nessus,Extended,Contains the Nessus Scan Name.
+host_start,nessus.scan.start,Date,Nessus,Extended,Contains the time of the first host scan.
+scan_start,nessus.scan.start,Date,Nessus,Extended,Contains the start time of Nessus Scan.
+status,nessus.scan.status,Keyword,Nessus,Extended,Contains the Nessus Scan Status.
+scan_type,nessus.scan.type,Keyword,Nessus,Extended,Contains the Nessus Scan Type.
+scanner_name,nessus.scanner.name,Keyword,Nessus,Extended,Contains the Nessus Scanner Name.
+sid,nessus.security.id,Long,Nessus,Extended,Contains the Nessus Security ID.
+severity_index,nessus.severity.index,Long,Nessus,Extended,Contains the Nessus Severity Index risk.
+targets,nessus.targets,Keyword,Nessus,Extended,Contains the Nessus scan target host(s) or network(s).
+user_permissions,nessus.user.permissions,Long,Nessus,Extended,Contains the Nessus User Permissions ID.
+uuid,nessus.uuid,Keyword,Nessus,Extended,Contains the Nessus UUID.
+vuln_index,nessus.vuln.index,Long,Nessus,Extended,Contains the Nessus Vulnerabilty Index number.
+bandwidth,botes.network.bandwidth,Keyword,Network,Extended,Bandwidth of the device (In bytes).
+fragment_count,botes.network.ip.fragment,Long,Network,Extended,Number of IP fragments.
+tos,botes.network.ip.tos,Long,Network,Extended,Type of service.
+version,botes.network.ip.version,Long,Network,Extended,IP version.
+trandisp,botes.network.nat.type,Keyword,Network,Extended,NAT translation type.
+duration,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+flow.age,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+duration,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+time_taken,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+time_taken,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+time_taken,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+time_taken,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+time_taken,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+time_taken,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+time_taken,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+time_taken,botes.network.session.duration,Long,Network,Extended,Duration of the network session.
+flow.end,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+sessionid,botes.network.session.id,Keyword,Network,Extended,ID for the network session.
+sessionid,botes.network.session.id,Keyword,Network,Extended,ID for the network session.
+flow_id,botes.network.session.id,Keyword,Network,Extended,ID for the network session.
+flow.reason,botes.network.session.reason,Keyword,Network,Extended,Reason of the state of the flow.
+flow.start,botes.network.session.start,Date,Network,Extended,Date/time of the network session starting.
+flow.state,botes.network.session.state,Keyword,Network,Extended,State of the flow.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+direction,network.direction,Keyword,Network,Core,Direction of the network traffic.
+proto,network.iana_number,Keyword,Network,Extended,IANA Protocol number.
+proto,network.iana_number,Keyword,Network,Extended,IANA Protocol number.
+protoid,network.iana_number,Keyword,Network,Extended,IANA Protocol number.
+packets,network.packets,Long,Network,Core,Total packets transferred in both directions.
+packets,network.packets,Long,Network,Core,Total packets transferred in both directions.
+packets,network.packets,Long,Network,Core,Total packets transferred in both directions.
+packets,network.packets,Long,Network,Core,Total packets transferred in both directions.
+packets,network.packets,Long,Network,Core,Total packets transferred in both directions.
+service,network.protocol,Keyword,Network,Core,"L7 Network protocol name. ex. http, lumberjack, transport protocol."
+service,network.protocol,Keyword,Network,Core,"L7 Network protocol name. ex. http, lumberjack, transport protocol."
+app_proto,network.protocol,Keyword,Network,Core,"L7 Network protocol name. ex. http, lumberjack, transport protocol."
+ports{}.protocol,network.protocol,Keyword,Network,Core,"L7 Network protocol name. ex. http, lumberjack, transport protocol."
+protocol,network.protocol,Keyword,Network,Core,"L7 Network protocol name. ex. http, lumberjack, transport protocol."
+protocol,network.protocol,Keyword,Network,Core,"L7 Network protocol name. ex. http, lumberjack, transport protocol."
+protocol,network.protocol,Keyword,Network,Core,"L7 Network protocol name. ex. http, lumberjack, transport protocol."
+DestinationPortName,network.protocol,Keyword,Network,Core,"L7 Network protocol name. ex. http, lumberjack, transport protocol."
+SourcePortName,network.protocol,Keyword,Network,Core,"L7 Network protocol name. ex. http, lumberjack, transport protocol."
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+proto,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+ports{}.transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+protocol,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+Protocol,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+devid,botes.observer.id,Keyword,Observer,Extended,Device identifier of the observer.
+devid,botes.observer.id,Keyword,Observer,Extended,Device identifier of the observer.
+devid,botes.observer.id,Keyword,Observer,Extended,Device identifier of the observer.
+ids_type,botes.observer.ids.type,Keyword,Observer,Extended,The subtype of the observer the data is coming from.
+ids_type,botes.observer.ids.type,Keyword,Observer,Extended,The subtype of the observer the data is coming from.
+devname,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
+devname,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
+devname,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
+host,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
+host,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
+host,observer.ip,Ip,Observer,Core,IP address of the observer.
+host,observer.ip,Ip,Observer,Core,IP address of the observer.
+host,observer.ip,Ip,Observer,Core,IP address of the observer.
+product,observer.type,Keyword,Observer,Core,The type of the observer the data is coming from.
+product,observer.type,Keyword,Observer,Core,The type of the observer the data is coming from.
+product,observer.type,Keyword,Observer,Core,The type of the observer the data is coming from.
+product,observer.type,Keyword,Observer,Core,The type of the observer the data is coming from.
+vendor,observer.vendor,Keyword,Observer,Core,Observer vendor information.
+vendor,observer.vendor,Keyword,Observer,Core,Observer vendor information.
+vendor,observer.vendor,Keyword,Observer,Core,Observer vendor information.
+vendor,observer.vendor,Keyword,Observer,Core,Observer vendor information.
+Exit_Status,botes.process.exit.status,Keyword,Process,Extended,Contains hexadecimal exit code of exited/terminated process.
+Process_Command_Line,botes.process.full,Keyword,Process,Extended,"Contains the name of executable and arguments which were passed to it. You must enable ""Administrative Templates\System\Audit Process Creation\Include command line in process creation events"" group policy to include command line in process creation events."
+CommandLine,botes.process.full,Keyword,Process,Extended,"Contains full path, the name and option(s) of the executable for the process."
+ParentCommandLine,botes.process.full,Keyword,Process,Extended,"Contains full path, the name and option(s) of the parent for the process."
+ProcessGuid,botes.process.guid,Keyword,Process,Extended,Contains the Process Guid of the process that made the network connection.
+ParentProcessGuid,botes.process.pguid,Keyword,Process,Extended,Contains the Process GUID of the process that spawned/created the main process.
+Creator_Process_Name,botes.process.pname,Keyword,Process,Extended,Contains full path and the name of the executable for the process.
+ParentImage,botes.process.pname,Keyword,Process,Extended,Contains full path and the name of the parent for the process.
+Name,process.executable,Keyword,Process,Extended,Absolute path to the process executable.
+process_image,process.name,Keyword,Process,Extended,Process name. Sometimes called program name or similar.
+New_Process_Name,process.name,Keyword,Process,Extended,Process name. Sometimes called program name or similar.
+Process_Name,process.name,Keyword,Process,Extended,Process name. Sometimes called program name or similar.
+Image,process.name,Keyword,Process,Extended,Contains full path and the name of the executable for the process.
+ImageLoaded,process.name,Keyword,Process,Extended,Contains full path and the name of the module for the process.
+process,process.name,Keyword,Process,Extended,Contains the Process name. Sometimes called program name or similar.
+pid,process.pid,Long,Process,Core,Process id.
+New_Process_ID,process.pid,Keyword,Process,Core,Process id.
+Process_ID,process.pid,Keyword,Process,Core,Process id.
+ProcessId,process.pid,Keyword,Process,Core,Contains the Process ID used by the os to identify the process that made the network connection.
+Creator_Process_ID,process.ppid,Keyword,Process,Extended,Contains hexadecimal Process ID of the process which ran the new process.
+ParentProcessId,process.ppid,Keyword,Process,Extended,Contains the Process ID of the process that spawned/created the main process.
+TimeCreated,process.start,Date,Process,Extended,Contains the Local Timezone Time of file/process creation.
+CurrentDirectory,process.working_directory,Keyword,Process,Extended,Contains full path of the executable for the process.
+data_packets_out,botes.server.packets.data,Long,Server,Extended,Packets sent from the server to the client.
+missing_packets_out,botes.server.packets.missing,Long,Server,Extended,The number of missing packet gaps detected within the response.
+missing_packets_out,botes.server.packets.missing,Long,Server,Extended,The number of missing packet gaps detected within the response.
+bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
+bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
+bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
+bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
+bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
+bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
+bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
+s_port,server.port,Long,Server,Core,Port of the server.
+login_server,server.user.name,Keyword,Server,Core,"Concatenated login and server: <login>@<server>, string."
+Service_Start_Type,botes.service.start_ype,Keyword,Service,Extended,Contains she service start type can have one of the following values
+Service_Start_Type,botes.service.start_ype,Keyword,Service,Extended,Contains she service start type can have one of the following values
+Service_File_Name,service.file.path,Keyword,Service,Extended,Contains the fully rooted path to the file that the Service Control Manager will execute to start the service.
+Service_File_Name,service.file.path,Keyword,Service,Extended,Contains the fully rooted path to the file that the Service Control Manager will execute to start the service.
+Service_Name,service.name,Keyword,Service,Core,Contains the name of the installed service or service data is collected from.
+Service_Name,service.name,Keyword,Service,Core,Contains the name of the installed service or service data is collected from.
+Service_Type,service.type,Keyword,Service,Core,Contains the type of the installed service or service data is collected from.
+Service_Type,service.type,Keyword,Service,Core,Contains the type of the installed service or service data is collected from.
+request_call_id,sip.call.id,Long,SIP,Extended,Call's id extracted for each sip request
+callee_user_phone,sip.callee.user_phone,Boolean,SIP,Extended,Callee's phone presence flag.
+caller_user_phone,sip.caller.user_phone,Boolean,SIP,Extended,Caller's phone presence flag.
+contact,sip.contact.header,Keyword,SIP,Extended,The Contact header field provides a SIP or SIPS URI that can be used to contact that specific instance of the UA for subsequent requests.
+from,sip.from,Keyword,SIP,Extended,The SIP initiator of the request
+method,sip.method,Keyword,SIP,Extended,The SIP method used.
+cseq,sip.sequence.id,Keyword,SIP,Extended,SIP sequence number.
+to,sip.to,Keyword,SIP,Extended,The SIP recipient of the request
+uri,sip.uri,Keyword,SIP,Extended,Contains the URI (similar to To: field).
+via,sip.via,Keyword,SIP,Extended,The Via header field indicates the transport used for the transaction and identifies the location where the response is to be sent.
+command,smb.header.command,Keyword,SMB,Extended,Defined SMB command used.
+command{},smb.header.command,Keyword,SMB,Extended,Defined SMB command used.
+nt_status,smb.header.error_status,Keyword,SMB,Extended,Used to communicate error messages from the server to the client.
+nt_status{},smb.header.error_status,Keyword,SMB,Extended,Used to communicate error messages from the server to the client.
+search_attributes,smb.search.attributes,Long,SMB,Extended,An attribute mask used to specify the standard attributes a file must have in order to match the search.
+search_pattern,smb.search.pattern,Keyword,SMB,Extended,The file pattern to search for.
+service,smb.service.type,Keyword,SMB,Extended,The type of resource that the client intends to access.
+service{},smb.service.type,Keyword,SMB,Extended,The type of resource that the client intends to access.
+dialect{},smb.version,Keyword,SMB,Extended,The version of the SMB Protocol
+community{},snmp.community.name,Keyword,SNMP,Extended,SNMP community name.
+varbind_list{}.oid,snmp.oid.list,Keyword,SNMP,Extended,"Array containing OIDs, their values and their types."
+method{},snmp.request.type,Keyword,SNMP,Extended,SNMP request type.
+request_id,snmp.transaction.id,Keyword,SNMP,Extended,SNMP query identifier.
+version{},snmp.version,Keyword,SNMP,Extended,SNMP version.
+devtype,botes.source.device.type,Keyword,Source,Extended,Device type of the source.
+srcname,botes.source.hostname,Keyword,Source,Extended,Hostname of the source.
+host,botes.source.hostname,Keyword,Source,Extended,The hostname address of the server on which the log file entry was generated.
+host,botes.source.hostname,Keyword,Source,Extended,The hostname address of the server on which the log file entry was generated.
+Source_Workstation,botes.source.hostname,Keyword,Source,Extended,Contains the name of the computer from which the logon attempt originated.
+Workstation_Name,botes.source.hostname,Keyword,Source,Extended,Contains the machine name from which logon attempt was performed.
+SourceHostname,botes.source.hostname,Keyword,Source,Extended,Contains the Host Name of the source.
+interface,botes.source.interface,Keyword,Source,Extended,Interface of the source.
+srcintf,botes.source.interface,Keyword,Source,Extended,Interface of the source.
+srcintf,botes.source.interface,Keyword,Source,Extended,Interface of the source.
+SourceIsIpv6,botes.source.ipv6.flag,Boolean,Source,Extended,Contains an indicator that shows whether source IP is an IPv6 or not (True or False).
+ui,botes.source.user.interface,Keyword,Source,Extended,Interface used by user.
+bytes_out,source.bytes,Long,Source,Core,Bytes sent from the source to the destination.
+sentbyte,source.bytes,Long,Source,Core,Bytes sent from the source to the destination.
+sentbyte,source.bytes,Long,Source,Core,Bytes sent from the source to the destination.
+flow.bytes_toserver,source.bytes,Long,Source,Core,Bytes sent from the source to the destination.
+flow.pkts_toserver,source.bytes,Long,Source,Core,Bytes sent from the source to the destination.
+srcip,source.ip,Ip,Source,Core,IP address of the source.
+srcip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+Network_Address,source.ip,Ip,Source,Core,IP address of the source.
+Source_Address,source.ip,Ip,Source,Core,IP address of the source.
+Source_Network_Address,source.ip,Ip,Source,Core,Contains the IP address of machine from which logon attempt was performed.
+SourceIp,source.ip,Ip,Source,Core,Contains the IP address of the source.
+srcmac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
+transip,source.nat.ip,Ip,Source,Extended,NAT source IP.
+vendor_transport,source.nat.port,Long,Source,Extended,NAT Source Port.
+osname,source.os.name,Keyword,Source,Core,OS of the source.
+osversion,source.os.version,Keyword,Source,Core,Version of the OS of the source.
+sentpkt,source.packets,Long,Source,Core,Packets sent from the source to the destination.
+packets_out,source.packets,Long,Source,Core,Packets sent from the source to the destination.
+packets_out,source.packets,Long,Source,Core,Packets sent from the source to the destination.
+packets_out,source.packets,Long,Source,Core,Packets sent from the source to the destination.
+packets_out,source.packets,Long,Source,Core,Packets sent from the source to the destination.
+srcport,source.port,Long,Source,Core,Port of the source.
+srcport,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+Port,source.port,Long,Source,Core,Contains the source port which was used for logon attempt from remote machine.
+Source_Port,source.port,Long,Source,Core,Contains the source port which was used for logon attempt from remote machine.
+SourcePort,source.port,Long,Source,Core,Contains Port of the source.
+Logon_GUID,source.user.id,Keyword,Source,Core,One or multiple unique identifiers of the user.
+LogonGuid,source.user.id,Keyword,Source,Core,Contains the Logon GUID of the user who created the new process.
+src_user,source.user.name,Keyword,Source,Core,Short name or login of the source user.
+user,source.user.name,Keyword,Source,Core,Short name or login of the source user.
+Logon_Account,source.user.name,Keyword,Source,Core,Short name or login of the source user.
+ssh.client.software_version,ssh.client.software,Keyword,SSH,Extended,Version of SSH software used by client.
+ssh.client.proto_version,ssh.client.version,Keyword,SSH,Extended,Version of SSH used by client.
+ssh.server.software_version,ssh.server.software,Keyword,SSH,Extended,Version of SSH software used by server.
+ssh.server.proto_version,ssh.server.version,Keyword,SSH,Extended,Version of SSH used by server.
+stats.capture.kernel_drops,suricata.eve.stats.capture.kernel_drops,Long,Suricata,Extended,Number of packets that have been discarded instead of being sent to userspace.
+stats.capture.kernel_packets,suricata.eve.stats.capture.kernel_packets,Long,Suricata,Extended,Number of packets correctly sent to userspace.
+stats.decoder.avg_pkt_size,suricata.eve.stats.decoder.avg_pkt_size,Long,Suricata,Extended,Average size of packets decoded.
+stats.decoder.bytes,suricata.eve.stats.decoder.bytes,Long,Suricata,Extended,Number of decoded bytes.
+stats.decoder.erspan,suricata.eve.stats.decoder.erspan,Long,Suricata,Extended,Number of ERSPAN packets decoded.
+stats.decoder.ethernet,suricata.eve.stats.decoder.ethernet,Long,Suricata,Extended,Number of Ethernet frames decoded.
+stats.decoder.gre,suricata.eve.stats.decoder.gre,Long,Suricata,Extended,Number of GRE Tunnel packets decoded.
+stats.decoder.icmpv4,suricata.eve.stats.decoder.icmpv4,Long,Suricata,Extended,Number of ICMPv4 packets decoded.
+stats.decoder.icmpv6,suricata.eve.stats.decoder.icmpv6,Long,Suricata,Extended,Number of ICMPv6 decoded.
+stats.decoder.invalid,suricata.eve.stats.decoder.invalid,Long,Suricata,Extended,Number of invalid PDU decoded.
+stats.decoder.ipraw.invalid_ip_version,suricata.eve.stats.decoder.ipraw.invalid_ip_version,Long,Suricata,Extended,Number of packets with invalid IP version.
+stats.decoder.ipv4,suricata.eve.stats.decoder.ipv4,Long,Suricata,Extended,Number of IPv4 packets decoded.
+stats.decoder.ipv4_in_ipv6,suricata.eve.stats.decoder.ipv4_in_ipv6,Long,Suricata,Extended,Number of IPv4 to IPv6 Tunnel packets decoded.
+stats.decoder.ipv6,suricata.eve.stats.decoder.ipv6,Long,Suricata,Extended,Number of IPv6 packets decoded.
+stats.decoder.ipv6_in_ipv6,suricata.eve.stats.decoder.ipv6_in_ipv6,Long,Suricata,Extended,Number of IPv6 to IPv6 Tunnel packets decoded.
+stats.decoder.ltnull.pkt_too_small,suricata.eve.stats.decoder.ltnull.pkt_too_small,Long,Suricata,Extended,Number of invalid packets because too small.
+stats.decoder.ltnull.unsupported_type,suricata.eve.stats.decoder.ltnull.unsupported_type,Long,Suricata,Extended,Number of invalid packets because unsupported.
+stats.decoder.max_pkt_size,suricata.eve.stats.decoder.max_pkt_size,Long,Suricata,Extended,Maximum size of packets decoded.
+stats.decoder.mpls,suricata.eve.stats.decoder.mpls,Long,Suricata,Extended,Number of MPLS frames decoded.
+stats.decoder.null,suricata.eve.stats.decoder.null,Long,Suricata,Extended,Number of invalid because of null value.
+stats.decoder.pkts,suricata.eve.stats.decoder.pkts,Long,Suricata,Extended,Number of packets decoded.
+stats.decoder.ppp,suricata.eve.stats.decoder.ppp,Long,Suricata,Extended,Number of PPP frames decoded.
+stats.decoder.pppoe,suricata.eve.stats.decoder.pppoe,Long,Suricata,Extended,Number of PPPoE frames decoded.
+stats.decoder.raw,suricata.eve.stats.decoder.raw,Long,Suricata,Extended,Number of Raw frames decoded.
+stats.decoder.sctp,suricata.eve.stats.decoder.sctp,Long,Suricata,Extended,Number of SCTP segments decoded.
+stats.decoder.sll,suricata.eve.stats.decoder.sll,Long,Suricata,Extended,Number of SLL frames decoded.
+stats.decoder.tcp,suricata.eve.stats.decoder.tcp,Long,Suricata,Extended,Number of TCP segments decoded.
+stats.decoder.teredo,suricata.eve.stats.decoder.teredo,Long,Suricata,Extended,Number of Teredo Tunnel packets decoded.
+stats.decoder.udp,suricata.eve.stats.decoder.udp,Long,Suricata,Extended,Number of UDP segments decoded.
+stats.decoder.vlan,suricata.eve.stats.decoder.vlan,Long,Suricata,Extended,Number of VLAN frames decoded.
+stats.decoder.vlan_qinq,suricata.eve.stats.decoder.vlan_qinq,Long,Suricata,Extended,Number of 802.1Q frames decoded.
+stats.defrag.ipv4.fragments,suricata.eve.stats.defrag.ipv4.fragments,Long,Suricata,Extended,Number of IPv4 segments reassembled.
+stats.defrag.ipv4.reassembled,suricata.eve.stats.defrag.ipv4.reassembled,Long,Suricata,Extended,Number of reassembled IPv4 packets.
+stats.defrag.ipv4.timeouts,suricata.eve.stats.defrag.ipv4.timeouts,Long,Suricata,Extended,Number of timeouts while IPv4 packets reassembling.
+stats.defrag.ipv6.fragments,suricata.eve.stats.defrag.ipv6.fragments,Long,Suricata,Extended,Number of IPv6 segments reassembled.
+stats.defrag.ipv6.reassembled,suricata.eve.stats.defrag.ipv6.reassembled,Long,Suricata,Extended,Number of reassembled IPv6 packets.
+stats.defrag.ipv6.timeouts,suricata.eve.stats.defrag.ipv6.timeouts,Long,Suricata,Extended,Number of timeouts while IPv6 packets reassembling.
+stats.defrag.max_frag_hits,suricata.eve.stats.defrag.max_frag_hits,Long,Suricata,Extended,Maximum number of IP fragments for a packet reassembly.
+stats.detect.alert,suricata.eve.stats.detect.alert,Long,Suricata,Extended,Number of signature triggered.
+stats.dns.memcap_global,suricata.eve.stats.dns.memcap_global,Long,Suricata,Extended,Total of the globally reserved memory for DNS parser (Application layer parser).
+stats.dns.memcap_state,suricata.eve.stats.dns.memcap_state,Long,Suricata,Extended,Total of per Flow/State reserved memory for DNS parser (Application layer parser).
+stats.dns.memuse,suricata.eve.stats.dns.memuse,Long,Suricata,Extended,Reserved memory for DNS parser used (Application layer parser).
+stats.flow.emerg_mode_entered,suricata.eve.stats.flow.emerg_mode_entered,Long,Suricata,Extended,"Number of times the flow engine has entered emergency mode. The emergency state is activated when the memcap limit is reached, allowing to create new flows, but pruning them with the emergency timeouts."
+stats.flow.emerg_mode_over,suricata.eve.stats.flow.emerg_mode_over,Long,Suricata,Extended,"Number of times the flow engine has leaved emergency mode. The emergency state is activated when the memcap limit is reached, allowing to create new flows, but pruning them with the emergency timeouts."
+stats.flow.memcap,suricata.eve.stats.flow.memcap,Long,Suricata,Extended,Total of the Flow reserved memory.
+stats.flow.memuse,suricata.eve.stats.flow.memuse,Long,Suricata,Extended,Reserved Flow memory used.
+stats.flow.spare,suricata.eve.stats.flow.spare,Long,Suricata,Extended,Number of Flow Spare.
+stats.flow.tcp_reuse,suricata.eve.stats.flow.tcp_reuse,Long,Suricata,Extended,Number of Flow TCP reuse.
+stats.flow_mgr.closed_pruned,suricata.eve.stats.flow_mgr.closed_pruned,Long,Suricata,Extended,Number of Flow Manager closed pruned.
+stats.flow_mgr.est_pruned,suricata.eve.stats.flow_mgr.est_pruned,Long,Suricata,Extended,Number of Flow Manager est pruned.
+stats.flow_mgr.new_pruned,suricata.eve.stats.flow_mgr.new_pruned,Long,Suricata,Extended,Number of Flow Manager new pruned.
+stats.http.memcap,suricata.eve.stats.http.memcap,Long,Suricata,Extended,Total of the reserved memory for HTTP parser (Application layer parser).
+stats.http.memuse,suricata.eve.stats.http.memuse,Long,Suricata,Extended,Reserved memory for HTTP parser used (Application layer parser).
+stats.stream.3whs_ack_in_wrong_dir,suricata.eve.stats.stream.3whs_ack_in_wrong_dir,Long,Suricata,Extended,Number of wrong directionnal 3whs (3 Way Handshake) .
+stats.stream.3whs_async_wrong_seq,suricata.eve.stats.stream.3whs_async_wrong_seq,Long,Suricata,Extended,Number of wrong synchronous 3whs (3 Way Handshake) .
+stats.stream.3whs_right_seq_wrong_ack_evasion,suricata.eve.stats.stream.3whs_right_seq_wrong_ack_evasion,Long,Suricata,Extended,Number of wrong sequential 3whs (3 Way Handshake) .
+stats.tcp.invalid_checksum,suricata.eve.stats.tcp.invalid_checksum,Long,Suricata,Extended,Number of invalid TCP checksum.
+stats.tcp.memuse,suricata.eve.stats.tcp.memuse,Long,Suricata,Extended,Reserved memory for TCP parser used (Transport layer parser).
+stats.tcp.no_flow,suricata.eve.stats.tcp.no_flow,Long,Suricata,Extended,Number of packets associated with no flow.
+stats.tcp.pseudo,suricata.eve.stats.tcp.pseudo,Long,Suricata,Extended,Number of pseudo packets processed.
+stats.tcp.pseudo_failed,suricata.eve.stats.tcp.pseudo_failed,Long,Suricata,Extended,Number of pseudo packets failed to setup.
+stats.tcp.reassembly_gap,suricata.eve.stats.tcp.reassembly_gap,Long,Suricata,Extended,Number of TCP reassembly gap.
+stats.tcp.reassembly_memuse,suricata.eve.stats.tcp.reassembly_memuse,Long,Suricata,Extended,Reserved memory for reassembly engine used.
+stats.tcp.rst,suricata.eve.stats.tcp.rst,Long,Suricata,Extended,Number of TCP RST flags.
+stats.tcp.segment_memcap_drop,suricata.eve.stats.tcp.segment_memcap_drop,Long,Suricata,Extended,Number of Tcp.Segment Manager memcap drop.
+stats.tcp.sessions,suricata.eve.stats.tcp.sessions,Long,Suricata,Extended,Number of TCP Sessions.
+stats.tcp.ssn_memcap_drop,suricata.eve.stats.tcp.ssn_memcap_drop,Long,Suricata,Extended,Number of TCP sessions not picked up because memcap was reached.
+stats.tcp.stream_depth_reached,suricata.eve.stats.tcp.stream_depth_reached,Long,Suricata,Extended,Number of Tcp.Stream Manager depth reached.
+stats.tcp.syn,suricata.eve.stats.tcp.syn,Long,Suricata,Extended,Number of TCP SYN flags.
+stats.tcp.synack,suricata.eve.stats.tcp.synack,Long,Suricata,Extended,Number of TCP SYN-ACK flags.
+stats.uptime,suricata.eve.stats.uptime,Long,Suricata,Extended,Uptime of Suricata engine.
+tcp.ack,tcp.ack,Boolean,TCP,Extended,Specifies whether ACK flag bit is set on TCP segment header.
+tcp.tcp_flags_ts,tcp.client.flag.hex,Keyword,TCP,Extended,Client TCP segment flag hexadecimal value.
+tcp_flag_to_server,tcp.client.flag.name,Keyword,TCP,Extended,Client TCP segment flag name.
+tcp.cwr,tcp.cwr,Boolean,TCP,Extended,Specifies whether CWR flag bit is set on TCP segment header. CWR (Congestion Window Reduced) notify the destination that measure have been take to reduce window congestion.
+tcp.ecn,tcp.ecn,Boolean,TCP,Extended,Specifies whether ECN flag bit is set on TCP segment header. ECN (Explicit Congestion Notification) advertise for network congestion.
+tcp.fin,tcp.fin,Boolean,TCP,Extended,Specifies whether FIN flag bit is set on TCP segment header.
+tcp.tcp_flags,tcp.flag.hex,Keyword,TCP,Extended,TCP segment flag hexadecimal value for client and server.
+tcp_flag,tcp.flag.name,Keyword,TCP,Extended,TCP segment flag name for client and server.
+tcp.psh,tcp.psh,Boolean,TCP,Extended,Specifies whether PSH flag bit is set on TCP segment header.
+tcp.rst,tcp.rst,Boolean,TCP,Extended,Specifies whether RST flag bit is set on TCP segment header.
+tcp.tcp_flags_tc,tcp.server.flag.hex,Keyword,TCP,Extended,Server TCP segment flag hexadecimal value.
+tcp_flag_to_client,tcp.server.flag.name,Keyword,TCP,Extended,Server TCP segment flag name.
+tcp.state,tcp.state,Keyword,TCP,Extended,TCP session state.
+tcp_status,tcp.state,Keyword,TCP,Extended,TCP session state.
+tcp.syn,tcp.syn,Boolean,TCP,Extended,Specifies whether SYN flag bit is set on TCP segment header.
+utmaction,threat.action.outcome,Keyword,Threat,Extended,Security action performed by observer.
+countav,threat.antivirus.count,Long,Threat,Extended,Number of AV logs associated with the session.
+appcat,threat.application.category,Keyword,Threat,Extended,Category of the application monitored by an observer.
+appcat,threat.application.category,Keyword,Threat,Extended,Category of the application monitored by an observer.
+appact,threat.application.control.action,Keyword,Threat,Extended,The security action from app control.
+countapp,threat.application.control.logs,Long,Threat,Extended,Number of App Ctrl logs associated with the session.
+appid,threat.application.id,Keyword,Threat,Extended,Identifier of the application monitored by a particular observer.
+appid,threat.application.id,Keyword,Threat,Extended,Identifier of the application monitored by a particular observer.
+applist,threat.application.list,Keyword,Threat,Extended,List of which the application monitored by an observer is part
+applist,threat.application.list,Keyword,Threat,Extended,List of which the application monitored by an observer is part.
+app,threat.application.name,Keyword,Threat,Extended,Name of the application monitored by an observer.
+app,threat.application.name,Keyword,Threat,Extended,Name of the application monitored by an observer.
+apprisk,threat.application.risk,Keyword,Threat,Extended,Risk of the application monitored by an observer.
+apprisk,threat.application.risk,Keyword,Threat,Extended,Risk of the application monitored by an observer.
+attackid,threat.attack.id,Keyword,Threat,Extended,Identifer for a particular attack detected by an observer.
+alert.signature_id,threat.attack.id,Keyword,Threat,Extended,Identifer for a particular attack detected by an observer.
+fileinfo.state,threat.file.state,Keyword,Threat,Extended,State of the file.
+fileinfo.stored,threat.file.stored,Boolean,Threat,Extended,File stored by observer.
+incidentserialno,threat.incident.id,Keyword,Threat,Extended,Incident ID from observer when alert or signature trigger.
+countips,threat.ips.count,Long,Threat,Extended,Number of the IPS logs associated with the session.
+policyid,threat.policy.id,Long,Threat,Extended,"ID for policy of observer (WAF, Proxy, IPS, etc.)."
+policyid,threat.policy.id,Keyword,Threat,Extended,"ID for policy of observer (WAF, Proxy, IPS, etc.)."
+poluuid,threat.policy.uuid,Keyword,Threat,Extended,"UUID for policy of observer (WAF, Proxy, IPS, etc.)."
+profile,threat.profile.name,Keyword,Threat,Extended,The name of the profile that was used to detect threat(s) and take action.
+profile,threat.profile.name,Keyword,Threat,Extended,The name of the profile that was used to detect and take action.
+catdesc,threat.proxy.category.desc,Keyword,Threat,Extended,"Description of webfilter category of an observer (Proxy, WAF, etc.)."
+cat,threat.proxy.category.id,Keyword,Threat,Extended,"Identifier of webfilter category of an observer (Proxy, WAF, etc.)."
+count,threat.quarantine.count,Long,Threat,Extended,Quarantined object/threat count per hour  by observer.
+quarskip,threat.quarantine.explain,Keyword,Threat,Extended,Quarantine skip explanation.
+craction,threat.reputation.id,Keyword,Threat,Extended,ID for the type of threat who triggered the observer rule.
+method,threat.risk.method,Keyword,Threat,Extended,Rating override method by URL domain name or IP address.
+alert.gid,threat.signature.gid,Long,Threat,Extended,The gid keyword can be used to give different groups of signatures another id value (like in sid).
+attack,threat.signature.name,Keyword,Threat,Extended,The name of triggered signature.
+alert.signature,threat.signature.name,Keyword,Threat,Extended,The name of triggered signature.
+ref,threat.signature.reference,Text,Threat,Extended,"Information provided about signature (Descritpion, URL, etc.)."
+alert.rev,threat.signature.revision,Long,Threat,Extended,"Rev represents the version of the signature. If a signature is modified, the number of rev will be incremented by the signature writers."
+virusid,threat.virus.id,Keyword,Threat,Extended,ID of detected virus for a particular observer vendor.
+virus,threat.virus.name,Keyword,Threat,Extended,Name of detected virus.
+dtype,threat.virus.type,Keyword,Threat,Extended,Data type for virus category.
+countweb,threat.webfilter.count,Long,Threat,Extended,Number of the Web Filter logs associated with the session.
+ssl_cert_self_signed,tls.certificate.self_signed,Boolean,TLS,Extended,Specify is certificate is self-signed or not.
+ssl_cipher_id,tls.cipher.id,Long,TLS,Extended,Identifer of the cipher used for the TLS certificate.
+ssl_cipher_name,tls.cipher.name,Keyword,TLS,Extended,Name of the cipher used for the TLS certificate.
+ssl_client_cipher_list{},tls.client.cipher.list,Keyword,TLS,Extended,Identifer list of the available cipher for the TLS certificate.
+ssl_client_cipher_names{},tls.client.cipher.name,Keyword,TLS,Extended,Name list of the available cipher for the TLS certificate.
+ssl_client_compression_methods{},tls.client.compression_method,Keyword,TLS,Extended,Name list of the available compression method for the TLS certificate.
+ssl_client_hello_version,tls.client.hello.version,Keyword,TLS,Extended,Version of Hello protocol used by the client.
+ssl_cert_md5,tls.fingerprint.md5,Keyword,TLS,Extended,The (MD5) fingerprint of the TLS certificate.
+tls.fingerprint,tls.fingerprint.sha1,Keyword,TLS,Extended,The (SHA1) fingerprint of the TLS certificate.
+ssl_cert_sha1,tls.fingerprint.sha1,Keyword,TLS,Extended,The (SHA1) fingerprint of the TLS certificate.
+ssl_cert_sha256,tls.fingerprint.sha256,Keyword,TLS,Extended,The (SHA256) fingerprint of the TLS certificate.
+ssl_issuer_common_name,tls.issuer.cn,Keyword,TLS,Extended,The issuer common name field from the TLS certificate.
+ssl_issuer_country,tls.issuer.country,Keyword,TLS,Extended,The issuer country field from the TLS certificate.
+tls.issuerdn,tls.issuer.dn,Keyword,TLS,Extended,The issuer distinguished name field from the TLS certificate.
+ssl_issuer,tls.issuer.dn,Keyword,TLS,Extended,The issuer distinguished name field from the TLS certificate.
+ssl_issuer_email,tls.issuer.email,Keyword,TLS,Extended,The issuer email field from the TLS certificate.
+ssl_issuer_email,tls.issuer.email,Keyword,TLS,Extended,The issuer email field from the TLS certificate.
+ssl_issuer_locality,tls.issuer.locality,Keyword,TLS,Extended,The issuer locality field from the TLS certificate.
+ssl_issuer_locality,tls.issuer.locality,Keyword,TLS,Extended,The issuer locality field from the TLS certificate.
+ssl_issuer_organization,tls.issuer.organization,Keyword,TLS,Extended,The issuer organization field from the TLS certificate.
+ssl_issuer_organization,tls.issuer.organization,Keyword,TLS,Extended,The issuer organization field from the TLS certificate.
+ssl_issuer_state,tls.issuer.state,Keyword,TLS,Extended,The issuer state country field from the TLS certificate.
+ssl_issuer_unit,tls.issuer.unit,Keyword,TLS,Extended,The issuer unit field from the TLS certificate.
+ssl_compression_method,tls.negociated.compression_method,Keyword,TLS,Extended,Name of the compression method used for the TLS certificate.
+ssl_publickey_algorithm,tls.publickey.algorithm,Keyword,TLS,Extended,Algorithm used for TLS public key.
+ssl_publickey_bit_len,tls.publickey.length,Long,TLS,Extended,Length of TLS public key in bit.
+ssl_serial,tls.serial.number,Keyword,TLS,Extended,The serial number of the TLS certificate.
+ssl_serial,tls.serial.number,Keyword,TLS,Extended,The serial number of the TLS certificate.
+ssl_signature_algorithm,tls.signature.algorithm,Keyword,TLS,Extended,Algorithm used for TLS certificate signature.
+tls.sni,tls.sni,Keyword,TLS,Extended,The Server Name Indication (SNI) extension sent by the client.
+ssl_subject_common_name,tls.subject.cn,Keyword,TLS,Extended,The subject common name field from the TLS certificate.
+ssl_subject_country,tls.subject.country,Keyword,TLS,Extended,The subject country field from the TLS certificate.
+tls.subject,tls.subject.dn,Keyword,TLS,Extended,The subject field from the TLS certificate.
+ssl_subject,tls.subject.dn,Keyword,TLS,Extended,The subject field from the TLS certificate.
+ssl_subject_email,tls.subject.email,Keyword,TLS,Extended,The subject email  field from the TLS certificate.
+ssl_subject_locality,tls.subject.locality,Keyword,TLS,Extended,The subject locality field from the TLS certificate.
+ssl_subject_locality,tls.subject.locality,Keyword,TLS,Extended,The subject locality field from the TLS certificate.
+ssl_subject_organization,tls.subject.organization,Keyword,TLS,Extended,The subject organization field from the TLS certificate.
+ssl_subject_organization,tls.subject.organization,Keyword,TLS,Extended,The subject organization field from the TLS certificate.
+ssl_subject_state,tls.subject.state,Keyword,TLS,Extended,The subject state field from the TLS certificate.
+ssl_subject_unit,tls.subject.unit,Keyword,TLS,Extended,The subject unit field from the TLS certificate.
+ssl_validity_end,tls.validity.end,Date,TLS,Extended,The end validity date of the SSL/TLS certificate.
+ssl_validity_start,tls.validity.start,Date,TLS,Extended,The start validity date of the SSL/TLS certificate.
+tls.version,tls.version,Keyword,TLS,Extended,The SSL/TLS version used.
+ssl_version,tls.version,Keyword,TLS,Extended,The SSL/TLS version used.
+hostname,url.domain,Keyword,Url,Extended,Domain of the url.
+http.hostname,url.domain,Keyword,Url,Extended,Domain of the url.
+site,url.domain,Keyword,Url,Extended,Domain of the url.
+site{},url.domain,Keyword,Url,Extended,Domain of the url.
+uri_parm,url.fragment,Keyword,Url,Extended,"Portion of the url after the ; or #, such as ""top""."
+url,url.full,Keyword,Url,Extended,"If full URLs are important to your use case, they should be stored here."
+url,url.full,Keyword,Url,Extended,"If full URLs are important to your use case, they should be stored here."
+uri,url.original,Keyword,Url,Extended,"Unmodified original url as seen in the event source.  This field is meant to represent the URL as it was observed, complete or not."
+vendor_url,url.path,Keyword,Url,Extended,"Path of the request, such as ""/search""."
+http.url,url.path,Keyword,Url,Extended,"Path of the request, such as ""/search""."
+cs_uri_stem,url.path,Keyword,Url,Extended,"Path of the request, such as ""/search""."
+uri_path,url.path,Keyword,Url,Extended,"Path of the request, such as ""/search""."
+cs_uri_query,url.query,Keyword,Url,Extended,"The query field describes the query string of the request, such as ""q=elasticsearch""."
+uri_query,url.query,Keyword,Url,Extended,"The query field describes the query string of the request, such as ""q=elasticsearch""."
+Group_Domain,botes.user.group.domain,Keyword,User,Extended,Contains group's domain or computer name.
+Group_Name,botes.user.group.name,Keyword,User,Extended,Contains the name of the group which members were enumerated.
+domain,user.domain,Keyword,User,Extended,Name of the directory the user is a member of.
+domain,user.domain,Keyword,User,Extended,Name of the directory the user is a member of.
+Account_Domain,user.domain,Keyword,User,Extended,Name of the directory the user is a member of.
+user_id,user.id,Keyword,User,Core,One or multiple unique identifiers of the user.
+user_id{},user.id,Keyword,User,Core,One or multiple unique identifiers of the user.
+user,user.name,Keyword,User,Core,Short name or login of the user.
+user,user.name,Keyword,User,Core,Short name or login of the user.
+user,user.name,Keyword,User,Core,Short name or login of the user.
+login,user.name,Keyword,User,Core,Short name or login of the user.
+login,user.name,Keyword,User,Core,Short name or login of the user.
+User,user.name,Keyword,User,Core,Short name or login of the user.
+Account_Name,user.name,Keyword,User,Core,Short name or login of the user.
+User,user.name,Keyword,User,Core,Short name or login of the user.
+User,user.name,Keyword,User,Core,Short name or login of the user.
+http_user_agent,user_agent.original,Keyword,User agent,Extended,Unparsed version of the user_agent
+cs_User_Agent,user_agent.original,Keyword,User agent,Extended,Unparsed version of the user_agent
+http.http_user_agent,user_agent.original,Keyword,User_agent,Extended,Unparsed version of the user_agent.
+http_user_agent,user_agent.original,Keyword,User_agent,Extended,Unparsed version of the user_agent.
+http_user_agent{},user_agent.original,Keyword,User_agent,Extended,Unparsed version of the user_agent.
+Desired_Access,winlog.access.desired,Keyword,Winlog,Extended,The desired access mask. This mask depends on Object Server and Object Type parameters values. The value of this parameter is in decimal format.
+Access_Mask,winlog.access.mask,Keyword,Winlog,Extended,Contains Filesystem Object Access Permissions hexadecimal value.
+Accesses,winlog.access.permissions,Keyword,Winlog,Extended,Contains Filesystem Object Access Permissions text value.
+Access_Reasons,winlog.access.reasons,Keyword,Winlog,Extended,Contains Filesystem Object Access Reasons text value.
+Privileges_Used_for_Access_Check,winlog.access_check.privileges,Keyword,Winlog,Extended,"Contains the list of user privileges which were used during the operation, for example, SeBackupPrivilege."
+Adapter_specific_Domain_Suffix,winlog.adapter.domain,Keyword,Winlog,Extended,Contains the network adapter domain suffix.
+Adapter_Name,winlog.adapter.name,Keyword,Winlog,Extended,Contains the interface GUID of the network adapter.
+Additional_Information,winlog.additional.info,Keyword,Winlog,Extended,Contains additional information about Windows Event Log.
+Restricted_Admin_Mode,winlog.admin_mode.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether if the credentials provided were passed using Restricted Admin mode (Yes or No). Only populated for RemoteInteractive logon type sessions.
+Authentication_Package_Name,winlog.auth.loaded,Keyword,Winlog,Extended,Contains  the name of loaded Authentication Package.
+Security_Package_Name,winlog.auth.loaded,Keyword,Winlog,Extended,Contains the the name of loaded Security Package. The format is: DLL_PATH_AND_NAME: SECURITY_PACKAGE_NAME.
+Authentication_Package,winlog.auth.logon,Keyword,Winlog,Extended,Contains the name of the authentication package which was used for the logon authentication process.
+Configuration_Access_Policy,winlog.boot.policy,Keyword,Winlog,Extended,Contains Boot configuration access policy.
+Advanced_Options,winlog.boot_legacy.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether Windows is configured for system boot to the legacy menu (F8 menu) on the next boot.
+Load_Options,winlog.boot_options,Keyword,Winlog,Extended,Contains Boot load options.
+Cab_Id,winlog.cab_id,Keyword,Winlog,Extended,Windows Error Reporting back-end iCab field number. This is 0 if the server did not ask for a cabinet (.cab).
+Change_Reason,winlog.change.reason,Keyword,Winlog,Extended,Contains the Change Reasons text value.
+Rechecking_for_solution,winlog.checksolution.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether the report was resubmitted by a user to check for a response or solution for the error.
+ComputerName,winlog.computer_name,Keyword,Winlog,Extended,The hostname address of the server on which the log file entry was generated.
+ComputerName,winlog.computer_name,Keyword,Winlog,Extended,The hostname address of the server on which the log file entry was generated.
+ComputerName,winlog.computer_name,Keyword,Winlog,Extended,The hostname address of the server on which the log file entry was generated.
+Computer,winlog.computer_name,Keyword,Winlog,Extended,The hostname address of the server on which the log file entry was generated.
+Initiated,winlog.connection_init.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether process initiated a TCP connection or not (True or False).
+Sent_update_to_server,winlog.dns.update,Keyword,Winlog,Extended,Contains the update send to the DNS server.
+Elevated_Token,winlog.elevated_token.flag,Boolean,Winlog,Extended,"Contains an indicator that shows whether Token has been elevated or not (Yes or No).  If ""Yes"" then the session this event represents is elevated and has administrator privileges."
+Revived_Cache,winlog.esent.revived_cache,Long,Winlog,Extended,Contains ESENT Database engine revived cache.
+Saved_Cache,winlog.esent.saved_cache,Long,Winlog,Extended,Contains ESENT Database engine saved cache.
+Internal_Timing_Sequence,winlog.esent.sequence,Keyword,Winlog,Extended,Contains ESENT Database engine Timing Sequence.
+System_Event_Logging,winlog.event_logging.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether Windows remote System Event Logging is enabled or not (Yes or No).
+Resource_Attributes,winlog.file.attributes,Keyword,Winlog,Extended,"Contains the attributes associated with the object. For some objects, the field does not apply and ""-"" is displayed."
+Flight_Signing,winlog.flight_signing.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether Windows flight signing (which allows flight-signed code signing certificates) is enabled or not (Yes or No).
+Object_Handle,winlog.handle.id,Keyword,Winlog,Extended,"Contains the hexadecimal value of a handle to Object Name. This field can help you correlate this event with other events that might contain the same Handle ID, for example with EventID 4656."
+Handle_ID,winlog.handle_id,Keyword,Winlog,Extended,Contains hexadecimal value of a handle to Object Name. This field can help you correlate this event with other events that might contain the same Handle ID.
+Hashed_bucket,winlog.hashed.bucket,Keyword,Winlog,Extended,Contains a hashed version of a fault bucket number.
+HRESULT,winlog.hresult,Keyword,Winlog,Extended,Contains Windows HRESULT error code.
+HyperVisor_Debugging,winlog.hypervisor_debug.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether the hypervisor debugger is enabled or not (Yes or No).
+HyperVisor_Launch_Type,winlog.hypervisor_launch_type,Keyword,Winlog,Extended,Contains an indicator that shows the hypervisor launch options (Off or Auto).
+HyperVisor_Load_Options,winlog.hypervisor_load_options,Keyword,Winlog,Extended,Contains an indicator that shows hypervisor loadoptions.
+SidType,winlog.identifier.type,Keyword,Winlog,Extended,"Contains Windows SID Type (User, Group, Domain, Computer, etc.) belonging to the SID."
+SidType,winlog.identifier.type,Keyword,Winlog,Extended,"Contains Windows SID Type (User, Group, Domain, Computer, etc.) belonging to the SID."
+Idle_state_type,winlog.idle_state.type,Keyword,Winlog,Extended,Contains the Idle State Type.
+Impersonation_Level,winlog.impersonation,Keyword,Winlog,Extended,"Contains one of the four Impersonation Level value (SecurityAnonymous, SecurityIdentification, SecurityImpersonation or SecurityDelegation)."
+Mandatory_Label,winlog.integrity.label,Keyword,Winlog,Extended,Contains SID of integrity label which was assigned to the new process.
+IntegrityLevel,winlog.integrity.level,Keyword,Winlog,Extended,Contains the integrity level assigned to the process.
+Disable_Integrity_Checks,winlog.integrity_checks.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether Windows integrity check is disabled or not (Yes or No).
+Kernel_Debugging,winlog.kernel_debug.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether Windows kernel debugging is enabled or not (Yes or No).
+Keywords,winlog.keywords,Keyword,Winlog,Extended,Contains Windows Event Log keywords.
+Keywords,winlog.keywords,Keyword,Winlog,Extended,Contains Windows Event Log keywords.
+Keywords,winlog.keywords,Keyword,Winlog,Extended,Contains Windows Event Log keywords.
+Keywords,winlog.keywords,Keyword,Winlog,Extended,Contains Windows Event Log keywords.
+Linked_Logon_ID,winlog.linked.logon.id,Keyword,Winlog,Extended,"Contains hexadecimal value of the paired logon session. If there is no other logon session associated with this logon session, then the value is ""0x0""."
+Logon_ID,winlog.logon.id,Keyword,Winlog,Extended,"Contains hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example with EventID 4624."
+LogonId,winlog.logon.id,Keyword,Winlog,Extended,Contains the Logon ID of the user who created the new process.
+Logon_Process,winlog.logon.process,Keyword,Winlog,Extended,Contains the name of the trusted logon process that was used for the logon. See EventID 4611 for more information.
+Logon_Process_Name,winlog.logon.process,Keyword,Winlog,Extended,Contains the name of registered logon process.
+Logon_Type,winlog.logon.type,Long,Winlog,Extended,Contains the type of logon which was performed.
+Module_Path,winlog.module.path,Keyword,Winlog,Extended,Contains the full module path.
+Event_Name,winlog.name,Keyword,Winlog,Extended,Report's event name. This is not localized.
+New_Time,winlog.new_time,Date,Winlog,Extended,Contains new time that was set in UTC time zone. The format is YYYY-MM-DDThh:mm:ss.nnnnnnnZ:.
+Nominal_Frequency__MHz_,winlog.nominal.frequency,Long,Winlog,Extended,Contains the Nominal Frequency in (MHz)
+Notification_Package_Name,winlog.notification.package,Keyword,Winlog,Extended,Contains the name of loaded Notification Package.
+Key_Length,winlog.ntlm.key_length,Long,Winlog,Extended,Contains the length of NTLM Session Security key. Typically it has 128 bit or 56 bit length.
+Package_Name__NTLM_only_,winlog.ntlm.sub_package,Keyword,Winlog,Extended,Contains the name of the LAN Manager sub-package (NTLM-family protocol name) that was used during logon.
+Sid,winlog.object.identifier,Keyword,Winlog,Extended,"Contains Windows Security ID, used to identify a security principal or security group in Windows operating systems."
+Security_ID,winlog.object.identifier,Keyword,Winlog,Extended,Contains the SID of account that requested privileged operation. Event Viewer automatically tries to resolve SIDs and show the account name.
+Sid,winlog.object.identifier,Keyword,Winlog,Extended,"Contains Windows Security ID, used to identify a security principal or security group in Windows operating systems."
+SecurityID,winlog.object.identifier,Keyword,Winlog,Extended,Contains the SID of account that requested privileged operation. Event Viewer automatically tries to resolve SIDs and show the account name.
+Object_Name,winlog.object.name,Keyword,Winlog,Extended,Contains the name of the object that was accessed during the operation.
+Object_Type,winlog.object.type,Keyword,Winlog,Extended,"Contains the type of an object that was accessed during the operation (Mutant, Thread, Controller, Key, Job, etc.)."
+Previous_Time,winlog.old_time,Date,Winlog,Extended,Contains previous time in UTC time zone. The format is YYYY-MM-DDThh:mm:ss.nnnnnnnZ:.
+OpCode,winlog.opcode,Long,Winlog,Extended,Contains an opcode decimal code that identifies an operation within the task (<Task>) or one of the predefined global opcodes.
+OpCode,winlog.opcode,Long,Winlog,Extended,Contains an opcode decimal code that identifies an operation within the task (<Task>) or one of the predefined global opcodes.
+OpCode,winlog.opcode,Long,Winlog,Extended,Contains an opcode decimal code that identifies an operation within the task (<Task>) or one of the predefined global opcodes.
+Opcode,winlog.opcode,Long,Winlog,Extended,Contains an opcode decimal code that identifies an operation within the task (<Task>) or one of the predefined global opcodes.
+Performance_state_type,winlog.perf_state.type,Keyword,Winlog,Extended,Contains the Performance state type.
+Maximum_performance_percentage,winlog.performance.max,Long,Winlog,Extended,Contains the Maximum performance percentage.
+Minimum_performance_percentage,winlog.performance.min,Long,Winlog,Extended,Contains the Minimum performance percentage.
+Policy_ID,winlog.policy.id,Keyword,Winlog,Extended,Contains unique per-User Audit Policy hexadecimal identifier.
+P1,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+P2,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+P3,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+P4,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+P5,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+P6,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+P7,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+P8,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+P9,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+P10,winlog.problem.signature,Keyword,Winlog,Extended,"Report signature strings (that is, bucketing parameters). The message can report up to ten strings."
+Signature,winlog.process.signature,Keyword,Winlog,Extended,Contains the signer of the Process/Module.
+UtcTime,winlog.process.time_utc,Date,Winlog,Extended,Contains the UTC Time of file/process creation.
+Signed,winlog.process_signed.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether process/module is signed or not (True or False).
+data,winlog.registry.data,Keyword,Winlog,Extended,The data that the process_image making the Registry change tried to read or write.
+registry_key_name,winlog.registry.key.name,Keyword,Winlog,Extended,The Registry key name that the process_image attempted to make a change to.
+key_path,winlog.registry.key.path,Keyword,Winlog,Extended,The Registry key path that the process_image attempted to make a change to.
+registry_value_name,winlog.registry.name,Keyword,Winlog,Extended,The Registry value name that the process attempted to make a change to.
+data_type,winlog.registry.type,Keyword,Winlog,Extended,The type of Registry data that the process making the Registry change tried to get or set.
+Report_Id,winlog.report.id,Keyword,Winlog,Extended,Contains the unique GUID for a generated crash report
+Response,winlog.report.response,Keyword,Winlog,Extended,Contains a response string from the Windows Error Reporting server or the string Not available if no response was received.
+Privileges,winlog.requested.privileges,Keyword,Winlog,Extended,Contains the list of user privileges which were requested. The possible privileges depend on the subcategory.
+Resource_Manager,winlog.resource_mgr.id,Keyword,Winlog,Extended,Contains the unique GUID-Identifier of the Resource Manager which associated with this transaction.
+RM_Transaction_ID,winlog.resource_mgr.transac_id,Keyword,Winlog,Extended,"Contains the unique GUID of the transaction. This field can help you correlate this event with other events that might contain the same Transaction ID, for example with EventID 4656."
+Restricted_SID_Count,winlog.restricted_sid.count,Long,Winlog,Extended,Contains the number of restricted SIDs in the token. Applicable to only specific Object Types.
+Security_Error,winlog.rpc.error,Long,Winlog,Extended,Contains the RPC Security error code.
+Peer_Name,winlog.rpc.peer_name,Keyword,Winlog,Extended,Contains the RPC peer name or IP address.
+Protocol_Sequence,winlog.rpc.sequence,Keyword,Winlog,Extended,Contains the RPC Protocol sequence.
+New_Security_Descriptor,winlog.sddl.new,Keyword,Winlog,Extended,Contains the new Security Descriptor Definition Language (SDDL) value for the object.
+Original_Security_Descriptor,winlog.sddl.old,Keyword,Winlog,Extended,Contains the old Security Descriptor Definition Language (SDDL) value for the object.
+Service_Account,winlog.service.account,Keyword,Winlog,Extended,"Contains the security context that the service will run as when started. Note that this is what was configured when the service was installed, if the account is changed later that is not logged."
+Service_Account,winlog.service.account,Keyword,Winlog,Extended,"Contains the security context that the service will run as when started. Note that this is what was configured when the service was installed, if the account is changed later that is not logged."
+Session_ID,winlog.session.id,Long,Winlog,Extended,Contains the unique ID of unlocked session.
+Share_Name,winlog.share.name,Keyword,Winlog,Extended,Contains the name of accessed network share. The format is: \\*\SHARE_NAME.
+Share_Path,winlog.share.path,Keyword,Winlog,Extended,Contains the full system (NTFS) path for accessed share. The format is: \\??\PATH.
+Sleep_Reason,winlog.sleep.reason,Keyword,Winlog,Extended,Contains the Sleep Reason.
+Sleep_Time,winlog.sleep.time,Date,Winlog,Extended,Contains the Sleep Time.
+Object_Server,winlog.subsystem.name,Keyword,Winlog,Extended,"Contains the name of the Windows subsystem calling the routine (Security, Security Account Manager, SC Manager, NT Local Security Authority, ...)."
+Server,winlog.subsystem.name,Keyword,Winlog,Extended,"Contains the name of the Windows subsystem calling the routine (Security, Security Account Manager, SC Manager, NT Local Security Authority, ...)."
+Version,winlog.sysmon.schema_version,Long,Winlog,Extended,Contains the Sysmon Schema version.
+Task,winlog.task,Long,Winlog,Extended,Contains the Task ID.
+TaskCategory,winlog.task_category,Keyword,Winlog,Extended,Contains the Windows Event Log Task Category.
+TaskCategory,winlog.task_category,Keyword,Winlog,Extended,Contains the Windows Event Log Task Category.
+TerminalSessionId,winlog.terminal.session_id,Long,Winlog,Extended,Contains the ID of the session the user belongs to.
+Test_Signing,winlog.test_signing.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether Windows test signing is enabled or not (Yes or No).
+Minimum_throttle_percentage,winlog.throttle.min,Long,Winlog,Extended,Contains the Minimum throttle percentage.
+Token_Elevation_Type_id,winlog.token_elevation.id,Long,Winlog,Extended,Contains ID of current Token Elevation Type.
+Token_Elevation_Type,winlog.token_elevation.type,Keyword,Winlog,Extended,"Contains an indicator that shows if Elevation Type is TokenElevationTypeDefault (1), TokenElevationTypeFull (2) or TokenElevationTypeLimited (3)."
+Transaction_ID,winlog.transaction.id,Keyword,Winlog,Extended,"Contains the unique GUID of the transaction. This field can help you correlate this event with other events that might contain the same Transaction ID, for example with EventID 4660."
+New_State,winlog.transaction.state,Long,Winlog,Extended,Contains identifier of the new state of the transaction.
+Transited_Services,winlog.transmitted_services,Keyword,Winlog,Extended,Contains  the list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process.
+Number_of_Elements,winlog.user.per_policy,Long,Winlog,Extended,Contains the number of users for which Per-user policies were defined (number of unique users).
+Virtual_Account,winlog.virtual_account.flag,Boolean,Winlog,Extended,Contains an indicator that shows whether the account is a virtual account or not (Yes or No).
+VSM_Launch_Type,winlog.vsm_launch.type,Keyword,Winlog,Extended,Contains VSM launch type.
+Wake_Source,winlog.wake.source,Keyword,Winlog,Extended,Contains the Wake up source.
+Wake_Time,winlog.wake.time,Date,Winlog,Extended,Contains the Wake up time.
+Report_Status,winlog.wer.status,Long,Winlog,Extended,Contains a decimal mask for WER report status. Status can be a combination of multiple decimal mask.
+sc_win32_status,winlog.win32.status,Long,Winlog,Extended,The Windows status code.

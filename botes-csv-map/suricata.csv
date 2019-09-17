@@ -1,0 +1,160 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+flow.bytes_toclient,destination.bytes,Long,Destination,Core,Bytes sent from the destination to the source.
+in_iface,destination.interface,Keyword,Destination,Extended,Interface of the destination.
+dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
+flow.pkts_toclient,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
+dest_port,destination.port,Long,Destination,Core,Port of the destination.
+answer,dns.answers,Keyword,DNS,Extended,Answer from DNS for a query.
+dns.rcode,dns.response_code,Keyword,DNS,Extended,Contains the DNS response code.
+dns.type,dns.type,Keyword,DNS,Extended,Indicating DNS message type, can be "answer" or "query".
+dns.rdata,dns.answers.data,Keyword,DNS,Extended,DNS data  (ex.IP that domain name resolves to).
+dns.rrname,dns.answers.name,Keyword,DNS,Extended,DNS record name (ex: a domain name).
+dns.rrtype,dns.answers.type,Keyword,DNS,Extended,"DNS Record type (ex: A, AAAA, NS, PTR)."
+dns.id,dns.id,Keyword,DNS,Extended,DNS query identifier.
+dns.ttl,dns.answers.ttl,Long,DNS,Extended,Time (in seconds) a DNS information returned by the server will be kept in cache.
+alert.category,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+event_type,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
+alert.action,event.outcome,Keyword,Event,Extended,"The outcome of the event.If the event describes an action, this fields contains the outcome of that action."
+alert.severity,event.severity,Keyword,Event,Core,Severity describes the original severity of the event.
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+fileinfo.filename,file.path,Keyword,File,Extended,Full path to the file.
+fileinfo.size,file.size,Long,File,Extended,File size in bytes.
+http.http_content_type,http.response.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource.HTTP Request in this case.
+http.redirect,http.redirect.url,Keyword,HTTP,Extended,URL of HTTP redirect.
+http.http_method,http.request.method,Keyword,HTTP,Extended,HTTP request method.
+http.http_refer,http.request.referrer,Keyword,HTTP,Extended,Referrer for this HTTP request.
+http.length,http.response.content_length,Long,HTTP,Extended,Size in bytes of the response body.
+http.status,http.response.status_code,Long,HTTP,Extended,HTTP response status code.
+http.protocol,http.version,Keyword,HTTP,Extended,HTTP version.
+http.xff,http.xff,Keyword,HTTP,Extended,HTTP X-Forwarded-For support by adding an extra field or overwriting the source or destination IP address.
+icmp_code,icmp.code,Long,ICMP,Extended,ICMP code.
+icmp_type,icmp.type,Long,ICMP,Extended,ICMP type.
+app_proto,network.protocol,Keyword,Network,Core,"L7 Network protocol name.ex.http, lumberjack, transport protocol."
+flow.age,network.session.duration,Long,Network,Core,Duration of the network session.
+flow.end,network.session.end,Date,Network,Extended,Date/time of the network session ending.
+flow_id,network.session.id,Keyword,Network,Core,ID for the network session.
+flow.reason,network.session.reason,Keyword,Network,Extended,Reason of the state of the flow.
+flow.start,network.session.start,Date,Network,Extended,Date/time of the network session starting.
+flow.state,network.session.state,Keyword,Network,Extended,State of the flow.
+proto,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+alert.signature_id,threat.attack.id,Keyword,Threat,Extended,Identifer for a particular attack detected by an observer.
+fileinfo.state,threat.file.state,Keyword,Threat,Extended,State of the file.
+fileinfo.stored,threat.file.stored,Boolean,Threat,Extended,File stored by observer.
+host,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
+ids_type,observer.ids.type,Keyword,Observer,Extended,The subtype of the observer the data is coming from.
+alert.gid,threat.signature.gid,Long,Threat,Extended,The gid keyword can be used to give different groups of signatures another id value (like in sid).
+alert.signature,threat.signature.name,Keyword,Threat,Extended,The name of triggered signature.
+alert.rev,threat.signature.revision,Long,Threat,Extended,"Rev represents the version of the signature.If a signature is modified, the number of rev will be incremented by the signature writers."
+product,observer.type,Keyword,Observer,Core,The type of the observer the data is coming from.
+vendor,observer.vendor,Keyword,Observer,Core,Observer vendor information.
+flow.bytes_toserver,source.bytes,Long,Source,Core,Bytes sent from the source to the destination.
+flow.pkts_toserver,source.bytes,Long,Source,Core,Bytes sent from the source to the destination.
+src_ip,source.ip,Ip,Source,Core,IP address of the source.
+src_port,source.port,Long,Source,Core,Port of the source.
+ssh.client.software_version,ssh.client.software,Keyword,SSH,Extended,Version of SSH software used by client.
+ssh.client.proto_version,ssh.client.version,Keyword,SSH,Extended,Version of SSH used by client.
+ssh.server.software_version,ssh.server.software,Keyword,SSH,Extended,Version of SSH software used by server.
+ssh.server.proto_version,ssh.server.version,Keyword,SSH,Extended,Version of SSH used by server.
+stats.capture.kernel_drops,suricata.eve.stats.capture.kernel_drops,Long,Suricata,Extended,Number of packets that have been discarded instead of being sent to userspace.
+stats.capture.kernel_packets,suricata.eve.stats.capture.kernel_packets,Long,Suricata,Extended,Number of packets correctly sent to userspace.
+stats.decoder.avg_pkt_size,suricata.eve.stats.decoder.avg_pkt_size,Long,Suricata,Extended,Average size of packets decoded.
+stats.decoder.bytes,suricata.eve.stats.decoder.bytes,Long,Suricata,Extended,Number of decoded bytes.
+stats.decoder.erspan,suricata.eve.stats.decoder.erspan,Long,Suricata,Extended,Number of ERSPAN packets decoded.
+stats.decoder.ethernet,suricata.eve.stats.decoder.ethernet,Long,Suricata,Extended,Number of Ethernet frames decoded.
+stats.decoder.gre,suricata.eve.stats.decoder.gre,Long,Suricata,Extended,Number of GRE Tunnel packets decoded.
+stats.decoder.icmpv4,suricata.eve.stats.decoder.icmpv4,Long,Suricata,Extended,Number of ICMPv4 packets decoded.
+stats.decoder.icmpv6,suricata.eve.stats.decoder.icmpv6,Long,Suricata,Extended,Number of ICMPv6 decoded.
+stats.decoder.invalid,suricata.eve.stats.decoder.invalid,Long,Suricata,Extended,Number of invalid PDU decoded.
+stats.decoder.ipraw.invalid_ip_version,suricata.eve.stats.decoder.ipraw.invalid_ip_version,Long,Suricata,Extended,Number of packets with invalid IP version.
+stats.decoder.ipv4,suricata.eve.stats.decoder.ipv4,Long,Suricata,Extended,Number of IPv4 packets decoded.
+stats.decoder.ipv4_in_ipv6,suricata.eve.stats.decoder.ipv4_in_ipv6,Long,Suricata,Extended,Number of IPv4 to IPv6 Tunnel packets decoded.
+stats.decoder.ipv6,suricata.eve.stats.decoder.ipv6,Long,Suricata,Extended,Number of IPv6 packets decoded.
+stats.decoder.ipv6_in_ipv6,suricata.eve.stats.decoder.ipv6_in_ipv6,Long,Suricata,Extended,Number of IPv6 to IPv6 Tunnel packets decoded.
+stats.decoder.ltnull.pkt_too_small,suricata.eve.stats.decoder.ltnull.pkt_too_small,Long,Suricata,Extended,Number of invalid packets because too small.
+stats.decoder.ltnull.unsupported_type,suricata.eve.stats.decoder.ltnull.unsupported_type,Long,Suricata,Extended,Number of invalid packets because unsupported.
+stats.decoder.max_pkt_size,suricata.eve.stats.decoder.max_pkt_size,Long,Suricata,Extended,Maximum size of packets decoded.
+stats.decoder.mpls,suricata.eve.stats.decoder.mpls,Long,Suricata,Extended,Number of MPLS frames decoded.
+stats.decoder.null,suricata.eve.stats.decoder.null,Long,Suricata,Extended,Number of invalid because of null value.
+stats.decoder.pkts,suricata.eve.stats.decoder.pkts,Long,Suricata,Extended,Number of packets decoded.
+stats.decoder.ppp,suricata.eve.stats.decoder.ppp,Long,Suricata,Extended,Number of PPP frames decoded.
+stats.decoder.pppoe,suricata.eve.stats.decoder.pppoe,Long,Suricata,Extended,Number of PPPoE frames decoded.
+stats.decoder.raw,suricata.eve.stats.decoder.raw,Long,Suricata,Extended,Number of Raw frames decoded.
+stats.decoder.sctp,suricata.eve.stats.decoder.sctp,Long,Suricata,Extended,Number of SCTP segments decoded.
+stats.decoder.sll,suricata.eve.stats.decoder.sll,Long,Suricata,Extended,Number of SLL frames decoded.
+stats.decoder.tcp,suricata.eve.stats.decoder.tcp,Long,Suricata,Extended,Number of TCP segments decoded.
+stats.decoder.teredo,suricata.eve.stats.decoder.teredo,Long,Suricata,Extended,Number of Teredo Tunnel packets decoded.
+stats.decoder.udp,suricata.eve.stats.decoder.udp,Long,Suricata,Extended,Number of UDP segments decoded.
+stats.decoder.vlan,suricata.eve.stats.decoder.vlan,Long,Suricata,Extended,Number of VLAN frames decoded.
+stats.decoder.vlan_qinq,suricata.eve.stats.decoder.vlan_qinq,Long,Suricata,Extended,Number of 802.1Q frames decoded.
+stats.defrag.ipv4.fragments,suricata.eve.stats.defrag.ipv4.fragments,Long,Suricata,Extended,Number of IPv4 segments reassembled.
+stats.defrag.ipv4.reassembled,suricata.eve.stats.defrag.ipv4.reassembled,Long,Suricata,Extended,Number of reassembled IPv4 packets.
+stats.defrag.ipv4.timeouts,suricata.eve.stats.defrag.ipv4.timeouts,Long,Suricata,Extended,Number of timeouts while IPv4 packets reassembling.
+stats.defrag.ipv6.fragments,suricata.eve.stats.defrag.ipv6.fragments,Long,Suricata,Extended,Number of IPv6 segments reassembled.
+stats.defrag.ipv6.reassembled,suricata.eve.stats.defrag.ipv6.reassembled,Long,Suricata,Extended,Number of reassembled IPv6 packets.
+stats.defrag.ipv6.timeouts,suricata.eve.stats.defrag.ipv6.timeouts,Long,Suricata,Extended,Number of timeouts while IPv6 packets reassembling.
+stats.defrag.max_frag_hits,suricata.eve.stats.defrag.max_frag_hits,Long,Suricata,Extended,Maximum number of IP fragments for a packet reassembly.
+stats.detect.alert,suricata.eve.stats.detect.alert,Long,Suricata,Extended,Number of signature triggered.
+stats.dns.memcap_global,suricata.eve.stats.dns.memcap_global,Long,Suricata,Extended,Total of the globally reserved memory for DNS parser (Application layer parser).
+stats.dns.memcap_state,suricata.eve.stats.dns.memcap_state,Long,Suricata,Extended,Total of per Flow/State reserved memory for DNS parser (Application layer parser).
+stats.dns.memuse,suricata.eve.stats.dns.memuse,Long,Suricata,Extended,Reserved memory for DNS parser used (Application layer parser).
+stats.flow.emerg_mode_entered,suricata.eve.stats.flow.emerg_mode_entered,Long,Suricata,Extended,"Number of times the flow engine has entered emergency mode.The emergency state is activated when the memcap limit is reached, allowing to create new flows, but pruning them with the emergency timeouts."
+stats.flow.emerg_mode_over,suricata.eve.stats.flow.emerg_mode_over,Long,Suricata,Extended,"Number of times the flow engine has leaved emergency mode.The emergency state is activated when the memcap limit is reached, allowing to create new flows, but pruning them with the emergency timeouts."
+stats.flow.memcap,suricata.eve.stats.flow.memcap,Long,Suricata,Extended,Total of the Flow reserved memory.
+stats.flow.memuse,suricata.eve.stats.flow.memuse,Long,Suricata,Extended,Reserved Flow memory used.
+stats.flow.spare,suricata.eve.stats.flow.spare,Long,Suricata,Extended,Number of Flow Spare.
+stats.flow.tcp_reuse,suricata.eve.stats.flow.tcp_reuse,Long,Suricata,Extended,Number of Flow TCP reuse.
+stats.flow_mgr.closed_pruned,suricata.eve.stats.flow_mgr.closed_pruned,Long,Suricata,Extended,Number of Flow Manager closed pruned.
+stats.flow_mgr.est_pruned,suricata.eve.stats.flow_mgr.est_pruned,Long,Suricata,Extended,Number of Flow Manager est pruned.
+stats.flow_mgr.new_pruned,suricata.eve.stats.flow_mgr.new_pruned,Long,Suricata,Extended,Number of Flow Manager new pruned.
+stats.http.memcap,suricata.eve.stats.http.memcap,Long,Suricata,Extended,Total of the reserved memory for HTTP parser (Application layer parser).
+stats.http.memuse,suricata.eve.stats.http.memuse,Long,Suricata,Extended,Reserved memory for HTTP parser used (Application layer parser).
+stats.stream.3whs_ack_in_wrong_dir,suricata.eve.stats.stream.3whs_ack_in_wrong_dir,Long,Suricata,Extended,Number of wrong directionnal 3whs (3 Way Handshake) .
+stats.stream.3whs_async_wrong_seq,suricata.eve.stats.stream.3whs_async_wrong_seq,Long,Suricata,Extended,Number of wrong synchronous 3whs (3 Way Handshake) .
+stats.stream.3whs_right_seq_wrong_ack_evasion,suricata.eve.stats.stream.3whs_right_seq_wrong_ack_evasion,Long,Suricata,Extended,Number of wrong sequential 3whs (3 Way Handshake) .
+stats.tcp.invalid_checksum,suricata.eve.stats.tcp.invalid_checksum,Long,Suricata,Extended,Number of invalid TCP checksum.
+stats.tcp.memuse,suricata.eve.stats.tcp.memuse,Long,Suricata,Extended,Reserved memory for TCP parser used (Transport layer parser).
+stats.tcp.no_flow,suricata.eve.stats.tcp.no_flow,Long,Suricata,Extended,Number of packets associated with no flow.
+stats.tcp.pseudo,suricata.eve.stats.tcp.pseudo,Long,Suricata,Extended,Number of pseudo packets processed.
+stats.tcp.pseudo_failed,suricata.eve.stats.tcp.pseudo_failed,Long,Suricata,Extended,Number of pseudo packets failed to setup.
+stats.tcp.reassembly_gap,suricata.eve.stats.tcp.reassembly_gap,Long,Suricata,Extended,Number of TCP reassembly gap.
+stats.tcp.reassembly_memuse,suricata.eve.stats.tcp.reassembly_memuse,Long,Suricata,Extended,Reserved memory for reassembly engine used.
+stats.tcp.rst,suricata.eve.stats.tcp.rst,Long,Suricata,Extended,Number of TCP RST flags.
+stats.tcp.segment_memcap_drop,suricata.eve.stats.tcp.segment_memcap_drop,Long,Suricata,Extended,Number of Tcp.Segment Manager memcap drop.
+stats.tcp.sessions,suricata.eve.stats.tcp.sessions,Long,Suricata,Extended,Number of TCP Sessions.
+stats.tcp.ssn_memcap_drop,suricata.eve.stats.tcp.ssn_memcap_drop,Long,Suricata,Extended,Number of TCP sessions not picked up because memcap was reached.
+stats.tcp.stream_depth_reached,suricata.eve.stats.tcp.stream_depth_reached,Long,Suricata,Extended,Number of Tcp.Stream Manager depth reached.
+stats.tcp.syn,suricata.eve.stats.tcp.syn,Long,Suricata,Extended,Number of TCP SYN flags.
+stats.tcp.synack,suricata.eve.stats.tcp.synack,Long,Suricata,Extended,Number of TCP SYN-ACK flags.
+stats.uptime,suricata.eve.stats.uptime,Long,Suricata,Extended,Uptime of Suricata engine.
+tcp.ack,tcp.ack,Boolean,TCP,Extended,Specifies whether ACK flag bit is set on TCP segment header.
+tcp.tcp_flags_ts,tcp.client.flag.hex,Keyword,TCP,Extended,Client TCP segment flag hexadecimal value.
+tcp_flag_to_server,tcp.client.flag.name,Keyword,TCP,Extended,Client TCP segment flag name.
+tcp.cwr,tcp.cwr,Boolean,TCP,Extended,Specifies whether CWR flag bit is set on TCP segment header.CWR (Congestion Window Reduced) notify the destination that measure have been take to reduce window congestion.
+tcp.ecn,tcp.ecn,Boolean,TCP,Extended,Specifies whether ECN flag bit is set on TCP segment header.ECN (Explicit Congestion Notification) advertise for network congestion.
+tcp.fin,tcp.fin,Boolean,TCP,Extended,Specifies whether FIN flag bit is set on TCP segment header.
+tcp.tcp_flags,tcp.flag.hex,Keyword,TCP,Extended,TCP segment flag hexadecimal value for client and server.
+tcp_flag,tcp.flag.name,Keyword,TCP,Extended,TCP segment flag name for client and server.
+tcp.psh,tcp.psh,Boolean,TCP,Extended,Specifies whether PSH flag bit is set on TCP segment header.
+tcp.rst,tcp.rst,Boolean,TCP,Extended,Specifies whether RST flag bit is set on TCP segment header.
+tcp.tcp_flags_tc,tcp.server.flag.hex,Keyword,TCP,Extended,Server TCP segment flag hexadecimal value.
+tcp_flag_to_client,tcp.server.flag.name,Keyword,TCP,Extended,Server TCP segment flag name.
+tcp.state,tcp.state,Keyword,TCP,Extended,TCP session state.
+tcp.syn,tcp.syn,Boolean,TCP,Extended,Specifies whether SYN flag bit is set on TCP segment header.
+tls.fingerprint,tls.fingerprint.sha1,Keyword,TLS,Extended,The (SHA1) fingerprint of the TLS certificate.
+tls.issuerdn,tls.issuer.dn,Keyword,TLS,Extended,The issuer distinguished name field from the TLS certificate.
+ssl_issuer_email,tls.issuer.email,Keyword,TLS,Extended,The issuer email field from the TLS certificate.
+ssl_issuer_locality,tls.issuer.locality,Keyword,TLS,Extended,The issuer locality field from the TLS certificate.
+ssl_issuer_organization,tls.issuer.organization,Keyword,TLS,Extended,The issuer organization field from the TLS certificate.
+ssl_serial,tls.serial.number,Keyword,TLS,Extended,The serial number of the TLS certificate.
+tls.sni,tls.sni,Keyword,TLS,Extended,The Server Name Indication (SNI) extension sent by the client.
+tls.subject,tls.subject.dn,Keyword,TLS,Extended,The subject field from the TLS certificate.
+ssl_subject_email,tls.subject.email,Keyword,TLS,Extended,The subject email  field from the TLS certificate.
+ssl_subject_locality,tls.subject.locality,Keyword,TLS,Extended,The subject locality field from the TLS certificate.
+ssl_subject_organization,tls.subject.organization,Keyword,TLS,Extended,The subject organization field from the TLS certificate.
+tls.version,tls.version,Keyword,TLS,Extended,The SSL/TLS version used.
+http.hostname,url.domain,Keyword,Url,Extended,Domain of the url.
+http.url,url.path,Keyword,Url,Extended,"Path of the request, such as ""/search""."
+http.http_user_agent,user_agent.original,Keyword,User_agent,Extended,Unparsed version of the user_agent.

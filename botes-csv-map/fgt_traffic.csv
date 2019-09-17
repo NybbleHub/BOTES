@@ -1,0 +1,60 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+craction,threat.reputation.id,Keyword,Threat,Extended,ID for the type of threat who triggered the observer rule.
+crlevel,client.reputation.level,Keyword,Client,Extended,Client Reputation Level .
+crscore,client.reputation.score,Long,Client,Extended,Client Reputation Score.
+rcvdbyte,destination.bytes,Long,Destination,Core,Bytes sent from the destination to the source.
+dstintf,destination.interface,Keyword,Destination,Extended,Interface of the destination.
+dstip,destination.ip,Ip,Destination,Core,IP address of the destination.
+tranip,destination.nat.ip,Ip,Destination,Extended,NAT destination IP.
+tranport,destination.nat.port,Long,Destination,Extended,NAT Destination Port.
+rcvdpkt,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
+dstport,destination.port,Long,Destination,Core,Port of the destination.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+logid,event.id,Keyword,Event,Core,Optional log ID from device or observer.
+message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
+vendor_action,event.outcome,Keyword,Event,Extended,"The outcome of the event.If the event describes an action, this fields contains the outcome of that action."
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+mastersrcmac,host.master.mac,Keyword,Host,Core,The master MAC address for a host that has multiple network interfaces.
+level,log.level,Keyword,Log,Core,Original log level of the log event.
+subtype,log.subtype,Keyword,Log,Extended,Log Subtype.
+type,log.type,Keyword,Log,Extended,Log Type.
+bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
+proto,network.iana_number,Keyword,Network,Extended,IANA Protocol number 
+trandisp,network.nat.type,Keyword,Network,Extended,NAT translation type.
+packets,network.packets,Long,Network,Core,Total packets transferred in both directions.
+service,network.protocol,Keyword,Network,Core,"L7 Network protocol name.ex.http, lumberjack, transport protocol."
+duration,network.session.duration,Long,Network,Core,Duration of the network session.
+sessionid,network.session.id,Keyword,Network,Core,ID for the network session.
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+countav,threat.antivirus.count,Long,Threat,Extended,Number of AV logs associated with the session.
+appcat,threat.application.category,Keyword,Threat,Extended,Category of the application monitored by an observer.
+appact,threat.application.control.action,Keyword,Threat,Extended,The security action from app control.
+countapp,threat.application.control.logs,Long,Threat,Extended,Number of App Ctrl logs associated with the session.
+appid,threat.application.id,Keyword,Threat,Extended,Identifier of the application monitored by a particular observer.
+applist,threat.application.list,Keyword,Threat,Extended,List of which the application monitored by an observer is part
+app,threat.application.name,Keyword,Threat,Extended,Name of the application monitored by an observer.
+apprisk,threat.application.risk,Keyword,Threat,Extended,Risk of the application monitored by an observer.
+devname,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
+devid,observer.id,Keyword,Observer,Extended,Device identifier of the observer.
+host,observer.ip,Ip,Observer,Core,IP address of the observer.
+countips,threat.ips.count,Long,Threat,Extended,Number of the IPS logs associated with the session.
+utmaction,threat.action.outcome,Keyword,Threat,Extended,Security action performed by observer.
+policyid,threat.policy.id,Long,Threat,Extended,"ID for policy of observer (WAF, Proxy, IPS, etc.)."
+poluuid,threat.policy.uuid,Keyword,Threat,Extended,"UUID for policy of observer (WAF, Proxy, IPS, etc.)."
+product,observer.type,Keyword,Observer,Core,The type of the observer the data is coming from.
+vendor,observer.vendor,Keyword,Observer,Core,Observer vendor information.
+countweb,threat.webfilter.count,Long,Threat,Extended,Number of the Web Filter logs associated with the session.
+sentbyte,source.bytes,Long,Source,Core,Bytes sent from the source to the destination.
+devtype,source.device.type,Keyword,Source,Extended,Device type of the source.
+srcname,source.hostname,Keyword,Source,Core,Hostname of the source.
+srcintf,source.interface,Keyword,Source,Core,Interface of the source.
+srcip,source.ip,Ip,Source,Core,IP address of the source.
+srcmac,source.mac,Keyword,Source,Core,MAC address of the source.
+transip,source.nat.ip,Ip,Source,Extended,NAT source IP.
+vendor_transport,source.nat.port,Long,Source,Extended,NAT Source Port.
+osname,source.os.name,Keyword,Source,Core,OS of the source.
+osversion,source.os.version,Keyword,Source,Core,Version of the OS of the source.
+sentpkt,source.packets,Long,Source,Core,Packets sent from the source to the destination.
+srcport,source.port,Long,Source,Core,Port of the source.
+user,user.name,Keyword,User,Core,Short name or login of the user.

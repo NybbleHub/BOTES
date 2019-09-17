@@ -1,0 +1,15 @@
+Original Field,ECS Field,Type,Field set,Level,Description
+data,winlog.registry.data,Keyword,Winlog,Extended,The data that the process_image making the Registry change tried to read or write.
+data_type,winlog.registry.type,Keyword,Winlog,Extended,The type of Registry data that the process making the Registry change tried to get or set.
+event_status,event.description,Keyword,Event,Core,Description of the log event.
+eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
+host,source.hostname,Keyword,Source,Extended,The hostname address of the server on which the log file entry was generated.
+key_path,winlog.registry.key.path,Keyword,Winlog,Extended,The Registry key path that the process_image attempted to make a change to.
+pid,process.pid,Long,Process,Core,Process id.
+process_image,process.name,Keyword,Process,Extended,Process name.Sometimes called program name or similar.
+message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
+registry_key_name,winlog.registry.key.name,Keyword,Winlog,Extended,The Registry key name that the process_image attempted to make a change to.
+registry_type,event.action,Keyword,Event,Core,The action captured by the event.This describes the information in the event.It is more specific than event.category.
+registry_value_name,winlog.registry.name,Keyword,Winlog,Extended,The Registry value name that the process attempted to make a change to.
+status,event.outcome,Keyword,Event,Extended,"The outcome of the event.If the event describes an action, this fields contains the outcome of that action."
+time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
