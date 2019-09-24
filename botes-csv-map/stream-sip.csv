@@ -1,16 +1,16 @@
-Original Field,ECS Field,Type,Field set,Level,Description
+﻿Original Field,ECS Field,Type,Field set,Level,Description
 bytes,network.bytes,Long,Network,Core,Total bytes transferred in both directions.
 bytes_in,server.bytes,Long,Server,Core,Bytes sent from the server to the client.
 bytes_out,client.bytes,Long,Client,Core,Bytes sent from the client to the server.
-callee_user_phone,sip.callee.user_phone,Boolean,SIP,Extended,Callee's phone presence flag.
-caller_user_phone,sip.caller.user_phone,Boolean,SIP,Extended,Caller's phone presence flag.
+callee_user_phone,sip.callee.user_phone,Keyword,SIP,Extended,Callee's phone presence flag.
+caller_user_phone,sip.caller.user_phone,Keyword,SIP,Extended,Caller's phone presence flag.
 contact,sip.contact.header,Keyword,SIP,Extended,The Contact header field provides a SIP or SIPS URI that can be used to contact that specific instance of the UA for subsequent requests.
 cseq,sip.sequence.id,Keyword,SIP,Extended,SIP sequence number.
-date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event’s timestamp does not include timezone information already
 dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
 dest_mac,destination.mac,Keyword,Destination,Core,MAC address of the destination.
 dest_port,destination.port,Long,Destination,Core,Port of the destination.
-endtime,network.session.end,Date,Network,Extended,Date/time of the network session ending.
+endtime,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
 eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
 from,sip.from,Keyword,SIP,Extended,The SIP initiator of the request
 method,sip.method,Keyword,SIP,Extended,The SIP method used.
@@ -20,8 +20,8 @@ src_ip,source.ip,Ip,Source,Core,IP address of the source.
 src_mac,source.mac,Keyword,Source,Core,MAC address of the source.
 src_port,source.port,Long,Source,Core,Port of the source.
 time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
-time_taken,network.session.duration,Long,Network,Core,Duration of the network session.
+time_taken,botes.network.session.duration,Long,Network,Core,Duration of the network session.
 to,sip.to,Keyword,SIP,Extended,The SIP recipient of the request
-transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, …)"
 uri,sip.uri,Keyword,SIP,Extended,Contains the URI (similar to To: field).
 via,sip.via,Keyword,SIP,Extended,The Via header field indicates the transport used for the transaction and identifies the location where the response is to be sent.

@@ -1,35 +1,35 @@
-Original Field,ECS Field,Type,Field set,Level,Description
-control,nessus.control.flag,Binary,Nessus,Extended,Contains an indicator that shows whether Nessus control is disabled or not (True or False).
+﻿Original Field,ECS Field,Type,Field set,Level,Description
+control,nessus.control.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether Nessus control is disabled or not (True or False).
 count,nessus.scan.count,Long,Nessus,Extended,Contains the number of open ports or vulnerabilties found.
-edit_allowed,nessus.edit.flag,Binary,Nessus,Extended,Contains an indicator that shows whether Nessus edit is allowed or not (True or False).
+edit_allowed,nessus.edit.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether Nessus edit is allowed or not (True or False).
 folder_id,nessus.folder.id,Long,Nessus,Extended,Contains the Nessus folder ID.
-hasaudittrail,nessus.audittrail.flag,Binary,Nessus,Extended,Contains an indicator that shows whether an Audit Trail  is available or not (True or False).
-haskb,nessus.kb.flag,Binary,Nessus,Extended,Contains an indicator that shows whether a KB  is available or not (True or False).
+hasaudittrail,nessus.audittrail.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether an Audit Trail  is available or not (True or False).
+haskb,nessus.kb.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether a KB  is available or not (True or False).
 host,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
 hostcount,nessus.host.count,Long,Nessus,Extended,Contains the scanned number of servers in targeted network.
 host_end,nessus.scan.end,Date,Nessus,Extended,Contains the time of the last host scan.
 host_id,nessus.host.id,Long,Nessus,Extended,Contains the Nessus host ID for the scan.
 host-ip,destination.ip,Ip,Destination,Core,IP address of the destination.
-hostname,destination.hostname,Keyword,Destination,Extended,Contains the Host Name of the destination.
+hostname,botes.destination.hostname,Keyword,Destination,Extended,Contains the Host Name of the destination.
 host_start,nessus.scan.start,Date,Nessus,Extended,Contains the time of the first host scan.
 mac-address,destination.mac,Keyword,Destination,Core,MAC address of the destination.
 name,nessus.scan.name,Keyword,Nessus,Extended,Contains the Nessus Scan Name.
-netbios-name,destination.hostname,Keyword,Destination,Extended,Contains the Host Name of the destination.
+netbios-name,botes.destination.hostname,Keyword,Destination,Extended,Contains the Host Name of the destination.
 object_id,nessus.object.id,Long,Nessus,Extended,Contains the Nessus Object ID.
 operating-system,destination.os.full,Keyword,Destination,Extended,"Contains the full scanned destination(s) Operating system name, including the version or code name."
-pci-can-upload,nessus.pciupload.flag,Binary,Nessus,Extended,Contains an indicator that shows whether Nessus PCI upload is allowed or not (True or False).
+pci-can-upload,nessus.pciupload.flag,Boolean,Nessus,Extended,Contains an indicator that shows whether Nessus PCI upload is allowed or not (True or False).
 plugin_family,nessus.plugin.family,Keyword,Nessus,Extended,Contains the Nessus Plugin Family.
 plugin_id,nessus.plugin.id,Keyword,Nessus,Extended,Contains the Nessus Plugin ID.
 plugin_name,nessus.plugin.name,Keyword,Nessus,Extended,Contains the Nessus Plugin Name.
 policy,nessus.policy.name,Keyword,Nessus,Extended,Contains the Nessus Policy Name.
 ports{}.port,destination.port,Long,Destination,Core,Port of the destination.
 ports{}.protocol,network.protocol,Keyword,Network,Core,"L7 Network protocol name.ex.http, lumberjack, transport protocol."
-ports{}.transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+ports{}.transport,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, …)"
 message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
 scanner_name,nessus.scanner.name,Keyword,Nessus,Extended,Contains the Nessus Scanner Name.
 scan_start,nessus.scan.start,Date,Nessus,Extended,Contains the start time of Nessus Scan.
 scan_type,nessus.scan.type,Keyword,Nessus,Extended,Contains the Nessus Scan Type.
-severity,event.severity,Keyword,Event,Core,Severity describes the original severity of the event.
+severity,log.level,Keyword,Log,Core,Original log level of the log event.
 severity_id,log.level,Keyword,Log,Core,Original log level of the log event.
 severity_index,nessus.severity.index,Long,Nessus,Extended,Contains the Nessus Severity Index risk.
 sid,nessus.security.id,Long,Nessus,Extended,Contains the Nessus Security ID.

@@ -1,12 +1,12 @@
-Original Field,ECS Field,Type,Field set,Level,Description
+﻿Original Field,ECS Field,Type,Field set,Level,Description
 flow.bytes_toclient,destination.bytes,Long,Destination,Core,Bytes sent from the destination to the source.
-in_iface,destination.interface,Keyword,Destination,Extended,Interface of the destination.
+in_iface,botes.destination.interface,Keyword,Destination,Extended,Interface of the destination.
 dest_ip,destination.ip,Ip,Destination,Core,IP address of the destination.
 flow.pkts_toclient,destination.packets,Long,Destination,Core,Packets sent from the destination to the source.
 dest_port,destination.port,Long,Destination,Core,Port of the destination.
-answer,dns.answers,Keyword,DNS,Extended,Answer from DNS for a query.
+answer,dns.answers.data,Keyword,DNS,Extended,Answer from DNS for a query.
 dns.rcode,dns.response_code,Keyword,DNS,Extended,Contains the DNS response code.
-dns.type,dns.type,Keyword,DNS,Extended,Indicating DNS message type, can be "answer" or "query".
+dns.type,dns.type,Keyword,DNS,Extended,"Indicating DNS message type, can be “answer” or “query”."
 dns.rdata,dns.answers.data,Keyword,DNS,Extended,DNS data  (ex.IP that domain name resolves to).
 dns.rrname,dns.answers.name,Keyword,DNS,Extended,DNS record name (ex: a domain name).
 dns.rrtype,dns.answers.type,Keyword,DNS,Extended,"DNS Record type (ex: A, AAAA, NS, PTR)."
@@ -19,32 +19,32 @@ time,event.created,Date,Event,Core,"Event.created contains the date/time when th
 message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
 alert.action,event.outcome,Keyword,Event,Extended,"The outcome of the event.If the event describes an action, this fields contains the outcome of that action."
 alert.severity,event.severity,Keyword,Event,Core,Severity describes the original severity of the event.
-date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event’s timestamp does not include timezone information already
 fileinfo.filename,file.path,Keyword,File,Extended,Full path to the file.
 fileinfo.size,file.size,Long,File,Extended,File size in bytes.
-http.http_content_type,http.response.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource.HTTP Request in this case.
-http.redirect,http.redirect.url,Keyword,HTTP,Extended,URL of HTTP redirect.
+http.http_content_type,botes.http.response.content_type,Keyword,HTTP,Extended,The HTTP entity header is used to indicate the media type of the resource.HTTP Request in this case.
+http.redirect,botes.http.redirect.url,Keyword,HTTP,Extended,URL of HTTP redirect.
 http.http_method,http.request.method,Keyword,HTTP,Extended,HTTP request method.
 http.http_refer,http.request.referrer,Keyword,HTTP,Extended,Referrer for this HTTP request.
-http.length,http.response.content_length,Long,HTTP,Extended,Size in bytes of the response body.
+http.length,botes.http.response.content_length,Long,HTTP,Extended,Size in bytes of the response body.
 http.status,http.response.status_code,Long,HTTP,Extended,HTTP response status code.
 http.protocol,http.version,Keyword,HTTP,Extended,HTTP version.
-http.xff,http.xff,Keyword,HTTP,Extended,HTTP X-Forwarded-For support by adding an extra field or overwriting the source or destination IP address.
-icmp_code,icmp.code,Long,ICMP,Extended,ICMP code.
-icmp_type,icmp.type,Long,ICMP,Extended,ICMP type.
+botes.http.xff,botes.http.xff,Keyword,HTTP,Extended,HTTP X-Forwarded-For support by adding an extra field or overwriting the source or destination IP address.
+icmp_code,icmp.code.id,Long,ICMP,Extended,ICMP code id.
+icmp_type,icmp.type.id,Long,ICMP,Extended,ICMP type id.
 app_proto,network.protocol,Keyword,Network,Core,"L7 Network protocol name.ex.http, lumberjack, transport protocol."
-flow.age,network.session.duration,Long,Network,Core,Duration of the network session.
-flow.end,network.session.end,Date,Network,Extended,Date/time of the network session ending.
-flow_id,network.session.id,Keyword,Network,Core,ID for the network session.
-flow.reason,network.session.reason,Keyword,Network,Extended,Reason of the state of the flow.
-flow.start,network.session.start,Date,Network,Extended,Date/time of the network session starting.
-flow.state,network.session.state,Keyword,Network,Extended,State of the flow.
-proto,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, etc.)"
+flow.age,botes.network.session.duration,Long,Network,Core,Duration of the network session.
+flow.end,botes.network.session.end,Date,Network,Extended,Date/time of the network session ending.
+flow_id,botes.network.session.id,Keyword,Network,Core,ID for the network session.
+flow.reason,botes.network.session.reason,Keyword,Network,Extended,Reason of the state of the flow.
+flow.start,botes.network.session.start,Date,Network,Extended,Date/time of the network session starting.
+flow.state,botes.network.session.state,Keyword,Network,Extended,State of the flow.
+proto,network.transport,Keyword,Network,Core,"Same as network.iana_number, but instead using the Keyword name of the transport layer (udp, tcp, …)"
 alert.signature_id,threat.attack.id,Keyword,Threat,Extended,Identifer for a particular attack detected by an observer.
 fileinfo.state,threat.file.state,Keyword,Threat,Extended,State of the file.
 fileinfo.stored,threat.file.stored,Boolean,Threat,Extended,File stored by observer.
 host,observer.hostname,Keyword,Observer,Core,Hostname of the observer.
-ids_type,observer.ids.type,Keyword,Observer,Extended,The subtype of the observer the data is coming from.
+ids_type,botes.observer.ids.type,Keyword,Observer,Extended,The subtype of the observer the data is coming from.
 alert.gid,threat.signature.gid,Long,Threat,Extended,The gid keyword can be used to give different groups of signatures another id value (like in sid).
 alert.signature,threat.signature.name,Keyword,Threat,Extended,The name of triggered signature.
 alert.rev,threat.signature.revision,Long,Threat,Extended,"Rev represents the version of the signature.If a signature is modified, the number of rev will be incremented by the signature writers."

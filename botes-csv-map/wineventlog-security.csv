@@ -1,39 +1,39 @@
-Original Field,ECS Field,Type,Field set,Level,Description
+﻿Original Field,ECS Field,Type,Field set,Level,Description
 Accesses,winlog.access.permissions,Keyword,Winlog,Extended,Contains Filesystem Object Access Permissions text value.
 Access_Mask,winlog.access.mask,Keyword,Winlog,Extended,Contains Filesystem Object Access Permissions hexadecimal value.
 Access_Reasons,winlog.access.reasons,Keyword,Winlog,Extended,Contains Filesystem Object Access Reasons text value.
 Account_Domain,user.domain,Keyword,User,Extended,Name of the directory the user is a member of.
 Account_Name,user.name,Keyword,User,Core,Short name or login of the user.
 Additional_Information,winlog.additional.info,Keyword,Winlog,Extended,Contains additional information about Windows Event Log.
-Advanced_Options,winlog.boot_legacy.flag,Binary,Winlog,Extended,Contains an indicator that shows whether Windows is configured for system boot to the legacy menu (F8 menu) on the next boot.
+Advanced_Options,winlog.boot_legacy.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether Windows is configured for system boot to the legacy menu (F8 menu) on the next boot.
 Authentication_Package,winlog.auth.logon,Keyword,Winlog,Extended,Contains the name of the authentication package which was used for the logon authentication process.
 Authentication_Package_Name,winlog.auth.loaded,Keyword,Winlog,Extended,Contains  the name of loaded Authentication Package.
 ComputerName,winlog.computer_name,Keyword,Winlog,Extended,The hostname address of the server on which the log file entry was generated.
 Configuration_Access_Policy,winlog.boot.policy,Keyword,Winlog,Extended,Contains Boot configuration access policy.
-Creator_Process_ID,process.ppid,Keyword,Process,Extended,Contains hexadecimal Process ID of the process which ran the new process.
-Creator_Process_Name,process.pname,Keyword,Process,Extended,Contains full path and the name of the executable for the process.
-date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event's timestamp does not include timezone information already
+Creator_Process_ID,process.ppid,Long,Process,Extended,Contains hexadecimal Process ID of the process which ran the new process.
+Creator_Process_Name,botes.process.pname,Keyword,Process,Extended,Contains full path and the name of the executable for the process.
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event’s timestamp does not include timezone information already
 Desired_Access,winlog.access.desired,Keyword,Winlog,Extended,The desired access mask.This mask depends on Object Server and Object Type parameters values.The value of this parameter is in decimal format.
-Disable_Integrity_Checks,winlog.integrity_checks.flag,Binary,Winlog,Extended,Contains an indicator that shows whether Windows integrity check is disabled or not (Yes or No).
+Disable_Integrity_Checks,winlog.integrity_checks.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether Windows integrity check is disabled or not (Yes or No).
 dvc_nt_host,host.hostname,Keyword,Host,Core,Hostname of the host.
-Elevated_Token,winlog.elevated_token.flag,Binary,Winlog,Extended,Contains an indicator that shows whether Token has been elevated or not (Yes or No). If "Yes" then the session this event represents is elevated and has administrator privileges.
-Error_Code,error.code,Keyword,Error,Core,Contains error code for Failure events.For Success events this parameter has "0x0" value.
+Elevated_Token,winlog.elevated_token.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether Token has been elevated or not (Yes or No). If “Yes” then the session this event represents is elevated and has administrator privileges.
+Error_Code,error.code,Keyword,Error,Core,Contains error code for Failure events.For Success events this parameter has “0x0” value.
 EventCode,event.code,Keyword,Event,Extended,"Identification code for this event, if one exists."
 EventType,event.category,Keyword,Event,Core,Contains high-level information about the contents of the event.
-Exit_Status,process.exit.status,Keyword,Process,Extended,Contains hexadecimal exit code of exited/terminated process.
+Exit_Status,botes.process.exit.status,Keyword,Process,Extended,Contains hexadecimal exit code of exited/terminated process.
 File_Name,file.path,Keyword,File,Extended,Full path to the file.
-Flight_Signing,winlog.flight_signing.flag,Binary,Winlog,Extended,Contains an indicator that shows whether Windows flight signing (which allows flight-signed code signing certificates) is enabled or not (Yes or No).
-Group_Domain,user.group.domain,Keyword,User,Extended,Contains group's domain or computer name.
+Flight_Signing,winlog.flight_signing.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether Windows flight signing (which allows flight-signed code signing certificates) is enabled or not (Yes or No).
+Group_Domain,botes.user.group.domain,Keyword,User,Extended,Contains group’s domain or computer name.
 Group_Name,user.group.name,Keyword,User,Extended,Contains the name of the group which members were enumerated.
 Handle_ID,winlog.handle_id,Keyword,Winlog,Extended,Contains hexadecimal value of a handle to Object Name.This field can help you correlate this event with other events that might contain the same Handle ID.
-HyperVisor_Debugging,winlog.hypervisor_debug.flag,Binary,Winlog,Extended,Contains an indicator that shows whether the hypervisor debugger is enabled or not (Yes or No).
+HyperVisor_Debugging,winlog.hypervisor_debug.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether the hypervisor debugger is enabled or not (Yes or No).
 HyperVisor_Launch_Type,winlog.hypervisor_launch_type,Keyword,Winlog,Extended,Contains an indicator that shows the hypervisor launch options (Off or Auto).
 HyperVisor_Load_Options,winlog.hypervisor_load_options,Keyword,Winlog,Extended,Contains an indicator that shows hypervisor loadoptions.
 Impersonation_Level,winlog.impersonation,Keyword,Winlog,Extended,"Contains one of the four Impersonation Level value (SecurityAnonymous, SecurityIdentification, SecurityImpersonation or SecurityDelegation)."
-Kernel_Debugging,winlog.kernel_debug.flag,Binary,Winlog,Extended,Contains an indicator that shows whether Windows kernel debugging is enabled or not (Yes or No).
+Kernel_Debugging,winlog.kernel_debug.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether Windows kernel debugging is enabled or not (Yes or No).
 Key_Length,winlog.ntlm.key_length,Long,Winlog,Extended,Contains the length of NTLM Session Security key.Typically it has 128 bit or 56 bit length.
 Keywords,winlog.keywords,Keyword,Winlog,Extended,Contains Windows Event Log keywords.
-Linked_Logon_ID,winlog.linked.logon.id,Keyword,Winlog,Extended,Contains hexadecimal value of the paired logon session.If there is no other logon session associated with this logon session, then the value is "0x0".
+Linked_Logon_ID,winlog.linked.logon.id,Keyword,Winlog,Extended,"Contains hexadecimal value of the paired logon session.If there is no other logon session associated with this logon session, then the value is “0x0”."
 Link_Name,file.target_path,Keyword,File,Extended,Target path for symlinks.
 Load_Options,winlog.boot_options,Keyword,Winlog,Extended,Contains Boot load options.
 LogName,event.category,Keyword,Event,Extended,Windows Event Log category.
@@ -48,36 +48,36 @@ Name,process.executable,Keyword,Process,Extended,Absolute path to the process ex
 Network_Account_Domain,destination.user.domain,Keyword,Destination,Extended,Name of the directory the destination user is a member of.
 Network_Account_Name,destination.user.name,Keyword,Destination,Core,Short name or login of the destination user.
 Network_Address,source.ip,Ip,Source,Core,IP address of the source.
-New_Process_ID,process.pid,Keyword,Process,Core,Process id.
+New_Process_ID,process.pid,Long,Process,Core,Process id.
 New_Process_Name,process.name,Keyword,Process,Extended,Process name.Sometimes called program name or similar.
 New_Security_Descriptor,winlog.sddl.new,Keyword,Winlog,Extended,Contains the new Security Descriptor Definition Language (SDDL) value for the object.
 New_State,winlog.transaction.state,Long,Winlog,Extended,Contains identifier of the new state of the transaction.
-New_Time,winlog.new_time,Date,Winlog,Extended,Contains new time that was set in UTC time zone.The format is YYYY-MM-DDThh:mm:ss.nnnnnnnZ:.
+New_Time,winlog.new_time,Keyword,Winlog,Extended,Contains new time that was set in UTC time zone.The format is YYYY-MM-DDThh:mm:ss.nnnnnnnZ:.
 Notification_Package_Name,winlog.notification.package,Keyword,Winlog,Extended,Contains the name of loaded Notification Package.
 Number_of_Elements,winlog.user.per_policy,Long,Winlog,Extended,Contains the number of users for which Per-user policies were defined (number of unique users).
 Object_Handle,winlog.handle.id,Keyword,Winlog,Extended,"Contains the hexadecimal value of a handle to Object Name.This field can help you correlate this event with other events that might contain the same Handle ID, for example with EventID 4656."
 Object_Name,winlog.object.name,Keyword,Winlog,Extended,Contains the name of the object that was accessed during the operation.
 Object_Server,winlog.subsystem.name,Keyword,Winlog,Extended,"Contains the name of the Windows subsystem calling the routine (Security, Security Account Manager, SC Manager, NT Local Security Authority, ...)."
-Object_Type,winlog.object.type,Keyword,Winlog,Extended,"Contains the type of an object that was accessed during the operation (Mutant, Thread, Controller, Key, Job, etc.)."
-OpCode,winlog.opcode,Long,Winlog,Extended,Contains an opcode decimal code that identifies an operation within the task (<Task>) or one of the predefined global opcodes.
+Object_Type,winlog.object.type,Keyword,Winlog,Extended,"Contains the type of an object that was accessed during the operation (Mutant, Thread, Controller, Key, Job, …)."
+OpCode,winlog.opcode,Keyword,Winlog,Extended,Contains a task-specific opcode for an event. All of the opcode definitions are assumed to be task-specific for the task that contains the event definitions.
 Original_Security_Descriptor,winlog.sddl.old,Keyword,Winlog,Extended,Contains the old Security Descriptor Definition Language (SDDL) value for the object.
 Package_Name__NTLM_only_,winlog.ntlm.sub_package,Keyword,Winlog,Extended,Contains the name of the LAN Manager sub-package (NTLM-family protocol name) that was used during logon.
 Peer_Name,winlog.rpc.peer_name,Keyword,Winlog,Extended,Contains the RPC peer name or IP address.
 Policy_ID,winlog.policy.id,Keyword,Winlog,Extended,Contains unique per-User Audit Policy hexadecimal identifier.
 Port,source.port,Long,Source,Core,Contains the source port which was used for logon attempt from remote machine.
-Previous_Time,winlog.old_time,Date,Winlog,Extended,Contains previous time in UTC time zone.The format is YYYY-MM-DDThh:mm:ss.nnnnnnnZ:.
+Previous_Time,winlog.old_time,Keyword,Winlog,Extended,Contains previous time in UTC time zone.The format is YYYY-MM-DDThh:mm:ss.nnnnnnnZ:.
 Privileges,winlog.requested.privileges,Keyword,Winlog,Extended,Contains the list of user privileges which were requested.The possible privileges depend on the subcategory.
 Privileges_Used_for_Access_Check,winlog.access_check.privileges,Keyword,Winlog,Extended,"Contains the list of user privileges which were used during the operation, for example, SeBackupPrivilege."
-Process_Command_Line,process.full,Keyword,Process,Extended,Contains the name of executable and arguments which were passed to it.You must enable "Administrative Templates\System\Audit Process Creation\Include command line in process creation events" group policy to include command line in process creation events.
-Process_ID,process.pid,Keyword,Process,Core,Process id.
+Process_Command_Line,botes.process.full,Keyword,Process,Extended,Contains the name of executable and arguments which were passed to it.You must enable “Administrative Templates\System\Audit Process Creation\Include command line in process creation events” group policy to include command line in process creation events.
+Process_ID,process.pid,Long,Process,Core,Process id.
 Process_Name,process.name,Keyword,Process,Extended,Process name.Sometimes called program name or similar.
 Protocol_Sequence,winlog.rpc.sequence,Keyword,Winlog,Extended,Contains the RPC Protocol sequence.
 message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
 RecordNumber,event.sequence,Long,Event,Extended,"Contains the record number for the event log record.The very first record written to an event log is record number 1, and other records are numbered sequentially."
 Relative_Target_Name,file.target_path,Keyword,File,Extended,Contains the relative name of the accessed target file or folder.This file-path is relative to the network share.
-Resource_Attributes,winlog.file.attributes,Keyword,Winlog,Extended,"Contains the attributes associated with the object.For some objects, the field does not apply and "-" is displayed."
+Resource_Attributes,winlog.file.attributes,Keyword,Winlog,Extended,"Contains the attributes associated with the object.For some objects, the field does not apply and “-“ is displayed."
 Resource_Manager,winlog.resource_mgr.id,Keyword,Winlog,Extended,Contains the unique GUID-Identifier of the Resource Manager which associated with this transaction.
-Restricted_Admin_Mode,winlog.admin_mode.flag,Binary,Winlog,Extended,Contains an indicator that shows whether if the credentials provided were passed using Restricted Admin mode (Yes or No).Only populated for RemoteInteractive logon type sessions.
+Restricted_Admin_Mode,winlog.admin_mode.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether if the credentials provided were passed using Restricted Admin mode (Yes or No).Only populated for RemoteInteractive logon type sessions.
 Restricted_SID_Count,winlog.restricted_sid.count,Long,Winlog,Extended,Contains the number of restricted SIDs in the token.Applicable to only specific Object Types.
 RM_Transaction_ID,winlog.resource_mgr.transac_id,Keyword,Winlog,Extended,"Contains the unique GUID of the transaction.This field can help you correlate this event with other events that might contain the same Transaction ID, for example with EventID 4656."
 Security_Error,wilong.rpc.error,Long,Winlog,Extended,Contains the RPC Security error code.
@@ -85,9 +85,9 @@ Security_ID,winlog.object.identifier,Keyword,Winlog,Extended,Contains the SID of
 Security_Package_Name,winlog.auth.loaded,Keyword,Winlog,Extended,Contains the the name of loaded Security Package.The format is: DLL_PATH_AND_NAME: SECURITY_PACKAGE_NAME.
 Server,winlog.subsystem.name,Keyword,Winlog,Extended,"Contains the name of the Windows subsystem calling the routine (Security, Security Account Manager, SC Manager, NT Local Security Authority, ...)."
 Service_Account,winlog.service.account,Keyword,Winlog,Extended,"Contains the security context that the service will run as when started.Note that this is what was configured when the service was installed, if the account is changed later that is not logged."
-Service_File_Name,service.file.path,Keyword,Service,Extended,Contains the fully rooted path to the file that the Service Control Manager will execute to start the service.
+Service_File_Name,botes.service.file.path,Keyword,Service,Extended,Contains the fully rooted path to the file that the Service Control Manager will execute to start the service.
 Service_Name,service.name,Keyword,Service,Core,Contains the name of the installed service or service data is collected from.
-Service_Start_Type,service.start_ype,Keyword,Service,Extended,Contains she service start type can have one of the following values
+Service_Start_Type,botes.service.start_type,Keyword,Service,Extended,Contains she service start type can have one of the following values
 Service_Type,service.type,Keyword,Service,Core,Contains the type of the installed service or service data is collected from.
 Session_ID,winlog.session.id,Long,Winlog,Extended,Contains the unique ID of unlocked session.
 Share_Name,winlog.share.name,Keyword,Winlog,Extended,Contains the name of accessed network share.The format is: \\*\SHARE_NAME.
@@ -96,18 +96,18 @@ Source_Address,source.ip,Ip,Source,Core,IP address of the source.
 SourceName,event.provider,Keyword,Event,Extended,Contains the name of the Windows Event Log source.
 Source_Network_Address,source.ip,Ip,Source,Core,Contains the IP address of machine from which logon attempt was performed.
 Source_Port,source.port,Long,Source,Core,Contains the source port which was used for logon attempt from remote machine.
-Source_Workstation,source.hostname,Keyword,Source,Extended,Contains the name of the computer from which the logon attempt originated.
-subject,event.description,Keyword,Event,Core,Contains Windows EventID description.
-System_Event_Logging,winlog.event_logging.flag,Binary,Winlog,Extended,Contains an indicator that shows whether Windows remote System Event Logging is enabled or not (Yes or No).
-Target_Server_Name,destination.hostname,Keyword,Destination,Extended,Contains the name of the server on which the new process was run.Has "localhost" value if the process was run locally.
+Source_Workstation,botes.source.hostname,Keyword,Source,Extended,Contains the name of the computer from which the logon attempt originated.
+subject,botes.event.description,Keyword,Event,Core,Contains Windows EventID description.
+System_Event_Logging,winlog.event_logging.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether Windows remote System Event Logging is enabled or not (Yes or No).
+Target_Server_Name,botes.destination.hostname,Keyword,Destination,Extended,Contains the name of the server on which the new process was run.Has “localhost” value if the process was run locally.
 TaskCategory,winlog.task_category,Keyword,Winlog,Extended,Contains the Windows Event Log Task Category.
-Test_Signing,winlog.test_signing.flag,Binary,Winlog,Extended,Contains an indicator that shows whether Windows test signing is enabled or not (Yes or No).
+Test_Signing,winlog.test_signing.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether Windows test signing is enabled or not (Yes or No).
 time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
 Token_Elevation_Type,winlog.token_elevation.type,Keyword,Winlog,Extended,"Contains an indicator that shows if Elevation Type is TokenElevationTypeDefault (1), TokenElevationTypeFull (2) or TokenElevationTypeLimited (3)."
 Token_Elevation_Type_id,winlog.token_elevation.id,Long,Winlog,Extended,Contains ID of current Token Elevation Type.
 Transaction_ID,winlog.transaction.id,Keyword,Winlog,Extended,"Contains the unique GUID of the transaction.This field can help you correlate this event with other events that might contain the same Transaction ID, for example with EventID 4660."
 Transited_Services,winlog.transmitted_services,Keyword,Winlog,Extended,Contains  the list of transmitted services.Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process.
 Type,log.level,Keyword,Log,Core,Original log level of the log event.
-Virtual_Account,winlog.virtual_account.flag,Binary,Winlog,Extended,Contains an indicator that shows whether the account is a virtual account or not (Yes or No).
+Virtual_Account,winlog.virtual_account.flag,Keyword,Winlog,Extended,Contains an indicator that shows whether the account is a virtual account or not (Yes or No).
 VSM_Launch_Type,winlog.vsm_launch.type,Keyword,Winlog,Extended,Contains VSM launch type.
-Workstation_Name,source.hostname,Keyword,Source,Extended,Contains the machine name from which logon attempt was performed.
+Workstation_Name,botes.source.hostname,Keyword,Source,Extended,Contains the machine name from which logon attempt was performed.

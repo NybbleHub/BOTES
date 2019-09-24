@@ -1,15 +1,18 @@
-Original Field,ECS Field,Type,Field set,Level,Description
-data,winlog.registry.data,Keyword,Winlog,Extended,The data that the process_image making the Registry change tried to read or write.
-data_type,winlog.registry.type,Keyword,Winlog,Extended,The type of Registry data that the process making the Registry change tried to get or set.
-event_status,event.description,Keyword,Event,Core,Description of the log event.
-eventtype,event.category,Keyword,Event,Core,This contains high-level information about the contents of the event.
-host,source.hostname,Keyword,Source,Extended,The hostname address of the server on which the log file entry was generated.
-key_path,winlog.registry.key.path,Keyword,Winlog,Extended,The Registry key path that the process_image attempted to make a change to.
-pid,process.pid,Long,Process,Core,Process id.
-process_image,process.name,Keyword,Process,Extended,Process name.Sometimes called program name or similar.
+﻿Original Field,ECS Field,Type,Field set,Level,Description
+c_ip,client.ip,Ip,Client,Core,IP address of the client.
+cs_method,http.request.method,Keyword,HTTP,Extended,HTTP request method.
+cs_Referer,http.request.referrer,Keyword,HTTP,Extended,Referrer for this HTTP request.
+cs_uri_query,url.query,Keyword,Url,Extended,"The query field describes the query string of the request, such as ""q=elasticsearch""."
+cs_uri_stem,url.path,Keyword,Url,Extended,"Path of the request, such as ""/search""."
+cs_User_Agent,user_agent.original,Keyword,User agent,Extended,Unparsed version of the user_agent
+cs_username,client.user.name,Keyword,User,Core,The name of the authenticated user that accessed the server.Anonymous users are indicated by a hyphen.
+date_zone,event.timezone,Keyword,Event,Extended,This field should be populated when the event’s timestamp does not include timezone information already
+host,botes.source.hostname,Keyword,Source,Extended,The hostname address of the server on which the log file entry was generated.
 message,event.original,Keyword,Event,Core,Raw text message of entire event.Used to demonstrate log integrity.
-registry_key_name,winlog.registry.key.name,Keyword,Winlog,Extended,The Registry key name that the process_image attempted to make a change to.
-registry_type,event.action,Keyword,Event,Core,The action captured by the event.This describes the information in the event.It is more specific than event.category.
-registry_value_name,winlog.registry.name,Keyword,Winlog,Extended,The Registry value name that the process attempted to make a change to.
-status,event.outcome,Keyword,Event,Extended,"The outcome of the event.If the event describes an action, this fields contains the outcome of that action."
+sc_status,http.response.status_code,Long,HTTP,Extended,HTTP response status code.
+sc_substatus,botes.http.response.substatus_code,Long,HTTP,Extended,The substatus of the HTTP error code.
+sc_win32_status,winlog.win32.status,Long,Winlog,Extended,The Windows status code.
+s_ip,botes.event.source.ip,Ip,Event,Extended,The IP address of the server on which the log file entry was generated.
+s_port,server.port,Long,Server,Core,Port of the server.
 time,event.created,Date,Event,Core,"Event.created contains the date/time when the event was first read by an agent, or by your pipeline."
+time_taken,botes.http.session.duration,Long,HTTP,Extended,Duration of the HTTP session in milliseconds.
