@@ -8,9 +8,9 @@ BOTES Python script can be used along with ECS Python script to automatically ge
 
 # Documentation
 
-Dataset cleaning process is fully documented here : [BOTES GitBook documentation](https://app.gitbook.com/@botes/s/botes-dataset/)
+Dataset cleaning process is fully documented here : [BOTES GitBook documentation](https://botes.gitbook.io/botes-dataset/)
 
-Documentation provide details about each step of cleaning, about matching between original and ECS fields, how to use BOTES and ECS Python scripts and how to setup an already installed Elastic Stack.
+Documentation provides details about each step of cleaning, about matching between original and ECS fields, how to use BOTES and ECS Python scripts and how to setup an already installed Elastic Stack.
 
 # Download
 
